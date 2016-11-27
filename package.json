@@ -1,0 +1,15 @@
+{
+  "name": "materialize-project",
+  "version": "0.1.0",
+  "description": "Share your photos",
+  "main": "server.js",
+  "keywords": [
+    "javascript",
+    "materialize"
+  ],
+  "author": "Maria Paulina",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
