@@ -1,0 +1,49 @@
+html
+  head
+    link(rel='stylesheet' href='public/app.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css')
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  body
+   section#main-container
+     .container
+       .row
+         .col.s10.push-s1
+           .row
+             .col.m5.hide-on-small-only
+               img.iphone(src='../assets/iphone.png')
+             .col.s12.m7
+               .row 
+                 .signup-box
+                   h1.platzigram Platzigram
+                   form.signup-form
+                     h2 Regístrate para ver fotos de tus amigos estudiando en Platzi
+                     .section
+                       a.btn.btn-fb.hide-on-small-only Iniciar sesión con Facebook
+                       a.btn.btn-fb.hide-on-med-and-up Iniciar sesión
+                     .divider
+                     .section
+                       input(type='email', name='email', placeholder='Correo electrónico')
+                       input(type='text', name='name', placeholder='Nombre completo')
+                       input(type='text', name='username', placeholder='Nombre de usuario')
+                       input(type='password', name='password', placeholder='Contraseña')
+                       button.btn.waves-effect.waves-light.btn-signup(type='submit') Regístrate
+               .row
+                 .login-box
+                   | ¿Tienes una cuenta? 
+                   a(href='/signin') Entrar 
+   footer.site-footer
+     .container
+       .row
+         .col.s12.l3.center-align
+           a.dropdown-button.btn(href='#', data-activates='dropdown1') Idioma
+           ul#dropdown1.dropdown-content
+             li
+               a(href='#!') Español
+             li
+               a(href='#!') Inglés
+         .col.s12.l3.push-l6.center-align
+           | 2016 - Trying Materialize
+   script(src='https://code.jquery.com/jquery-2.2.4.min.js', integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=', crossorigin='anonymous')
+   script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js')
