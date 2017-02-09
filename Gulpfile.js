@@ -34,7 +34,7 @@ function compile(watch) {
 
   if (watch) {
     bundle.on('update', function() {
-      console.log('--> Bundling...');
+      console.log('--> Bundling...' + '🚀  💚  💜 ');
       rebundle();
     });
   }
