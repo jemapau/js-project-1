@@ -1,12 +1,20 @@
-@import url("/node_modules/materialize-css/sass/materialize.scss");
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script");
 body {
   background: #fafafa;
   color: #125688;
   font-family: 'Montserrat', sans-serif; }
 
+.header {
+  background: white;
+  color: #125688;
+  box-shadow: none;
+  border-bottom: 1px solid #edeeee; }
+
 #main-container {
   margin: 30px auto; }
+
+nav {
+  margin-top: 0px !important; }
 
 .iphone {
   max-width: 100%; }
@@ -23,9 +31,13 @@ body {
   padding: 10px 0px;
   text-align: center; }
 
-.signup-box .platzigram {
+.title {
   font-family: 'Oleo Script';
-  font-size: 42px; }
+  font-size: 42px;
+  color: #125688; }
+
+nav .brand-logo {
+  color: #125688 !important; }
 
 .signup-form {
   width: 65%;

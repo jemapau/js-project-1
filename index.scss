@@ -1,7 +1,5 @@
 $secondary-color: #125688;
 
-@import url('node_modules/materialize-css/sass/materialize.scss');
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script');
 
 body {
@@ -10,8 +8,19 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.header {
+  background: white;
+  color: $secondary-color;
+  box-shadow: none;
+  border-bottom: 1px solid #edeeee;
+}
+
 #main-container {
   margin: 30px auto;
+}
+
+nav {
+  margin-top: 0px !important;
 }
 
 .iphone {
@@ -32,9 +41,14 @@ body {
   text-align: center;
 }
 
-.signup-box .title {
+.title {
   font-family: 'Oleo Script';
   font-size: 42px;
+  color: $secondary-color;
+}
+
+nav .brand-logo {
+  color: $secondary-color !important;
 }
 
 .signup-form {
