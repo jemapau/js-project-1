@@ -96,3 +96,15 @@ nav .brand-logo {
 .card .fa-heart-o {
   color: #125688;
   float: left; }
+
+.card .fa-heart {
+  color: #f44336;
+  display: none; }
+
+.card.liked .fa-heart {
+  display: block;
+  float: left; }
+
+.card.liked .fa-heart-o {
+  display: none;
+  float: left; }

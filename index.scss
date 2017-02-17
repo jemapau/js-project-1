@@ -125,3 +125,19 @@ $avatar-size: 48px;
   color: $secondary-color;
   float: left;
 }
+
+.card .fa-heart {
+  color : #f44336;
+  display: none;
+}
+
+.card.liked{
+  .fa-heart{
+    display: block;
+    float: left;
+  }
+  .fa-heart-o {
+    display: none;
+    float: left;
+  }
+}
