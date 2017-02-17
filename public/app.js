@@ -2573,13 +2573,16 @@ page('/', function (ctx, next) {
       username: 'gaby.123',
       avatar: 'https://uinames.com/api/photos/female/31.jpg'
     },
+    cardtitle: 'Geisha Illustration',
     url: 'https://d13yacurqjgara.cloudfront.net/users/507883/screenshots/3297792/andy_hau_quinn_the_fox_quinnsquips_japan_dribbble.jpg',
+    likes: 450,
     liked: true
   }, {
     user: {
       username: 'carol.123',
       avatar: 'https://uinames.com/api/photos/female/16.jpg'
     },
+    cardtitle: 'Latern Illustration',
     url: 'https://d13yacurqjgara.cloudfront.net/users/1315300/screenshots/3298040/lghths.jpg',
     likes: 300,
     liked: true
@@ -2673,12 +2676,11 @@ module.exports = function (pic) {
       <img class="activator" src="${ pic.url }">
     </div>
     <div class="card-content">
-      <span class="card-title activator">Card Title<i class="material-icons right">more_vert</i></span>
+      <span class="card-title activator">${ pic.user.username }</span>
       <a href="/user/${ pic.user.username }" class="card-title">
         <img src="${ pic.user.avatar }" class="avatar"/>
-          <span class="username">${ pic.user.username }</span>
       </a>
-      <small class="rigt time">A day ago</small>
+      <small class="right time">A day ago</small>
       <p>
         <a href="#"><i class="fa fa-heart-o" aria-hiddn="true"></i></a>
         <span class="left likes">${ pic.likes } Me gusta</span>

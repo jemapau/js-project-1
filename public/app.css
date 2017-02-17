@@ -63,3 +63,36 @@ nav .brand-logo {
 
 .timeline {
   padding: 30px 0; }
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 12px; }
+
+.card small.time {
+  line-height: 48px; }
+
+.card .username {
+  float: left;
+  color: #125688;
+  font-size: 30px; }
+
+.card p {
+  padding: 20px 0; }
+
+.card .likes {
+  line-height: 30px;
+  margin-left: 12px;
+  color: #125688; }
+
+.card .time {
+  float: right; }
+
+.card i {
+  font-size: 22px; }
+
+.card .fa-heart-o {
+  color: #125688;
+  float: left; }
