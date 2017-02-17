@@ -82,3 +82,62 @@ nav .brand-logo {
 .timeline {
   padding: 30px 0;
 }
+
+$avatar-size: 48px;
+
+.avatar {
+  width: $avatar-size;
+  height: $avatar-size;
+  border-radius: 50%;
+  float: left;
+  margin-right: 12px;
+}
+
+.card small.time {
+  line-height: $avatar-size;
+}
+
+.card .username {
+  float: left;
+  color: $secondary-color;
+  font-size: 30px;
+}
+
+.card p {
+  padding: 20px 0;
+}
+
+.card .likes {
+  line-height: 30px;
+  margin-left: 12px;
+  color: $secondary-color;
+}
+
+.card .time {
+  float: right;
+}
+
+.card i {
+  font-size: 22px;
+}
+
+.card .fa-heart-o {
+  color: $secondary-color;
+  float: left;
+}
+
+.card .fa-heart {
+  color : #f44336;
+  display: none;
+}
+
+.card.liked{
+  .fa-heart{
+    display: block;
+    float: left;
+  }
+  .fa-heart-o {
+    display: none;
+    float: left;
+  }
+}
