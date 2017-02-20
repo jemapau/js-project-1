@@ -1,19 +1,6 @@
 var yo = require('yo-yo');
 var moment = require('moment');
-
-if(!window.Intl) {
-  window.Intl = require('intl');
-  
-}
-
-
-var IntlRelativeFormat = window.IntlRelativeFormat = require('intl-relativeformat');
-
-require('intl-relativeformat/dist/locale-data/en.js');
-require('intl-relativeformat/dist/locale-data/es.js');
-require('intl-relativeformat/dist/locale-data/fr.js');
-
-var rf = new IntlRelativeFormat('fr');
+var translate = require('../translate');
 
 module.exports = function pictureCard(pic){
   var el;
@@ -27,11 +14,11 @@ module.exports = function pictureCard(pic){
         <a href="/user/${picture.user.username}" class="card-title">
           <img src="${picture.user.avatar}" class="avatar"/>
         </a>
-        <small class="right time">${rf.format(picture.createdAt)}</small>
+        <small class="right time">${translate.date.format(picture.createdAt)}</small>
         <p>
           <a href="#" onclick=${like.bind(null, true)}><i class="fa fa-heart-o" aria-hiddn="true"></i></a>
           <a href="#" onclick=${like.bind(null, false)}><i class="fa fa-heart" aria-hiddn="true"></i></a>
-          <span class="left likes">${picture.likes} Me gusta</span>
+          <span class="left likes">${translate.message('likes', {likes: picture.likes})}</span>
         </p>
       </div>
     </div>`;
