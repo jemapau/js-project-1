@@ -15,7 +15,7 @@ page('/', function (ctx, next) {
       },
       cardtitle: 'Geisha Illustration',
       url: 'https://d13yacurqjgara.cloudfront.net/users/507883/screenshots/3297792/andy_hau_quinn_the_fox_quinnsquips_japan_dribbble.jpg',
-      likes: 450,
+      likes: 0,
       liked: false,
       createdAt: new Date()
     },
@@ -26,7 +26,7 @@ page('/', function (ctx, next) {
       },
       cardtitle: 'Latern Illustration',
       url: 'https://d13yacurqjgara.cloudfront.net/users/1315300/screenshots/3298040/lghths.jpg',
-      likes: 300,
+      likes: 1,
       liked: false,
       createdAt: new Date().setDate(new Date().getDate() - 10)
     },

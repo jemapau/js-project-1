@@ -1,6 +1,6 @@
 var yo = require('yo-yo');
 
-module.exports = function layoout(content) {
+module.exports = function layout(content) {
   return yo`<div>
     <nav class="header">
       <div class="nav-wrapper">

@@ -198,647 +198,6 @@ module.exports = function emptyElement (element) {
 }
 
 },{}],4:[function(require,module,exports){
-IntlRelativeFormat.__addLocaleData({"locale":"en","pluralRuleFunction":function (n,ord){var s=String(n).split("."),v0=!s[1],t0=Number(s[0])==n,n10=t0&&s[0].slice(-1),n100=t0&&s[0].slice(-2);if(ord)return n10==1&&n100!=11?"one":n10==2&&n100!=12?"two":n10==3&&n100!=13?"few":"other";return n==1&&v0?"one":"other"},"fields":{"year":{"displayName":"year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"one":"in {0} year","other":"in {0} years"},"past":{"one":"{0} year ago","other":"{0} years ago"}}},"month":{"displayName":"month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"one":"in {0} month","other":"in {0} months"},"past":{"one":"{0} month ago","other":"{0} months ago"}}},"day":{"displayName":"day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"one":"in {0} day","other":"in {0} days"},"past":{"one":"{0} day ago","other":"{0} days ago"}}},"hour":{"displayName":"hour","relativeTime":{"future":{"one":"in {0} hour","other":"in {0} hours"},"past":{"one":"{0} hour ago","other":"{0} hours ago"}}},"minute":{"displayName":"minute","relativeTime":{"future":{"one":"in {0} minute","other":"in {0} minutes"},"past":{"one":"{0} minute ago","other":"{0} minutes ago"}}},"second":{"displayName":"second","relative":{"0":"now"},"relativeTime":{"future":{"one":"in {0} second","other":"in {0} seconds"},"past":{"one":"{0} second ago","other":"{0} seconds ago"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"en-001","parentLocale":"en"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-150","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-AG","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-AI","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-AS","parentLocale":"en"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-AT","parentLocale":"en-150"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-AU","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-BB","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-BE","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-BI","parentLocale":"en"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-BM","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-BS","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-BW","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-BZ","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-CA","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-CC","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-CH","parentLocale":"en-150"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-CK","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-CM","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-CX","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-CY","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-DE","parentLocale":"en-150"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-DG","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-DK","parentLocale":"en-150"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-DM","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-Dsrt","pluralRuleFunction":function (n,ord){if(ord)return"other";return"other"},"fields":{"year":{"displayName":"Year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"other":"+{0} y"},"past":{"other":"-{0} y"}}},"month":{"displayName":"Month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"other":"+{0} m"},"past":{"other":"-{0} m"}}},"day":{"displayName":"Day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"other":"+{0} d"},"past":{"other":"-{0} d"}}},"hour":{"displayName":"Hour","relativeTime":{"future":{"other":"+{0} h"},"past":{"other":"-{0} h"}}},"minute":{"displayName":"Minute","relativeTime":{"future":{"other":"+{0} min"},"past":{"other":"-{0} min"}}},"second":{"displayName":"Second","relative":{"0":"now"},"relativeTime":{"future":{"other":"+{0} s"},"past":{"other":"-{0} s"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"en-ER","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-FI","parentLocale":"en-150"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-FJ","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-FK","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-FM","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-GB","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-GD","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-GG","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-GH","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-GI","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-GM","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-GU","parentLocale":"en"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-GY","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-HK","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-IE","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-IL","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-IM","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-IN","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-IO","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-JE","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-JM","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-KE","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-KI","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-KN","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-KY","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-LC","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-LR","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-LS","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-MG","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-MH","parentLocale":"en"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-MO","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-MP","parentLocale":"en"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-MS","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-MT","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-MU","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-MW","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-MY","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-NA","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-NF","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-NG","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-NL","parentLocale":"en-150"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-NR","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-NU","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-NZ","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-PG","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-PH","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-PK","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-PN","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-PR","parentLocale":"en"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-PW","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-RW","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-SB","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-SC","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-SD","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-SE","parentLocale":"en-150"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-SG","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-SH","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-SI","parentLocale":"en-150"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-SL","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-SS","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-SX","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-SZ","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-Shaw","pluralRuleFunction":function (n,ord){if(ord)return"other";return"other"},"fields":{"year":{"displayName":"Year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"other":"+{0} y"},"past":{"other":"-{0} y"}}},"month":{"displayName":"Month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"other":"+{0} m"},"past":{"other":"-{0} m"}}},"day":{"displayName":"Day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"other":"+{0} d"},"past":{"other":"-{0} d"}}},"hour":{"displayName":"Hour","relativeTime":{"future":{"other":"+{0} h"},"past":{"other":"-{0} h"}}},"minute":{"displayName":"Minute","relativeTime":{"future":{"other":"+{0} min"},"past":{"other":"-{0} min"}}},"second":{"displayName":"Second","relative":{"0":"now"},"relativeTime":{"future":{"other":"+{0} s"},"past":{"other":"-{0} s"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"en-TC","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-TK","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-TO","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-TT","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-TV","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-TZ","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-UG","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-UM","parentLocale":"en"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-US","parentLocale":"en"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-VC","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-VG","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-VI","parentLocale":"en"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-VU","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-WS","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-ZA","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-ZM","parentLocale":"en-001"});
-IntlRelativeFormat.__addLocaleData({"locale":"en-ZW","parentLocale":"en-001"});
-
-},{}],5:[function(require,module,exports){
-IntlRelativeFormat.__addLocaleData({"locale":"es","pluralRuleFunction":function (n,ord){if(ord)return"other";return n==1?"one":"other"},"fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"anteayer","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"es-419","parentLocale":"es"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-AR","parentLocale":"es-419"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-BO","parentLocale":"es-419"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-CL","parentLocale":"es-419"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-CO","parentLocale":"es-419"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-CR","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"es-CU","parentLocale":"es-419"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-DO","parentLocale":"es-419","fields":{"year":{"displayName":"Año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"Mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"Día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"anteayer","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"Minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"Segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"es-EA","parentLocale":"es"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-EC","parentLocale":"es-419"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-GQ","parentLocale":"es"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-GT","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"es-HN","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"es-IC","parentLocale":"es"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-MX","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el año próximo","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el mes próximo","-1":"el mes pasado"},"relativeTime":{"future":{"one":"en {0} mes","other":"en {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"es-NI","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"es-PA","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"es-PE","parentLocale":"es-419"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-PH","parentLocale":"es"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-PR","parentLocale":"es-419"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-PY","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antes de ayer","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"es-SV","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"es-US","parentLocale":"es-419"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-UY","parentLocale":"es-419"});
-IntlRelativeFormat.__addLocaleData({"locale":"es-VE","parentLocale":"es-419"});
-
-},{}],6:[function(require,module,exports){
-IntlRelativeFormat.__addLocaleData({"locale":"fr","pluralRuleFunction":function (n,ord){if(ord)return n==1?"one":"other";return n>=0&&n<2?"one":"other"},"fields":{"year":{"displayName":"année","relative":{"0":"cette année","1":"l’année prochaine","-1":"l’année dernière"},"relativeTime":{"future":{"one":"dans {0} an","other":"dans {0} ans"},"past":{"one":"il y a {0} an","other":"il y a {0} ans"}}},"month":{"displayName":"mois","relative":{"0":"ce mois-ci","1":"le mois prochain","-1":"le mois dernier"},"relativeTime":{"future":{"one":"dans {0} mois","other":"dans {0} mois"},"past":{"one":"il y a {0} mois","other":"il y a {0} mois"}}},"day":{"displayName":"jour","relative":{"0":"aujourd’hui","1":"demain","2":"après-demain","-2":"avant-hier","-1":"hier"},"relativeTime":{"future":{"one":"dans {0} jour","other":"dans {0} jours"},"past":{"one":"il y a {0} jour","other":"il y a {0} jours"}}},"hour":{"displayName":"heure","relativeTime":{"future":{"one":"dans {0} heure","other":"dans {0} heures"},"past":{"one":"il y a {0} heure","other":"il y a {0} heures"}}},"minute":{"displayName":"minute","relativeTime":{"future":{"one":"dans {0} minute","other":"dans {0} minutes"},"past":{"one":"il y a {0} minute","other":"il y a {0} minutes"}}},"second":{"displayName":"seconde","relative":{"0":"maintenant"},"relativeTime":{"future":{"one":"dans {0} seconde","other":"dans {0} secondes"},"past":{"one":"il y a {0} seconde","other":"il y a {0} secondes"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-BE","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-BF","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-BI","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-BJ","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-BL","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-CA","parentLocale":"fr","fields":{"year":{"displayName":"année","relative":{"0":"cette année","1":"l’année prochaine","-1":"l’année dernière"},"relativeTime":{"future":{"one":"Dans {0} an","other":"Dans {0} ans"},"past":{"one":"Il y a {0} an","other":"Il y a {0} ans"}}},"month":{"displayName":"mois","relative":{"0":"ce mois-ci","1":"le mois prochain","-1":"le mois dernier"},"relativeTime":{"future":{"one":"dans {0} mois","other":"dans {0} mois"},"past":{"one":"il y a {0} mois","other":"il y a {0} mois"}}},"day":{"displayName":"jour","relative":{"0":"aujourd’hui","1":"demain","2":"après-demain","-2":"avant-hier","-1":"hier"},"relativeTime":{"future":{"one":"dans {0} jour","other":"dans {0} jours"},"past":{"one":"il y a {0} jour","other":"il y a {0} jours"}}},"hour":{"displayName":"heure","relativeTime":{"future":{"one":"dans {0} heure","other":"dans {0} heures"},"past":{"one":"il y a {0} heure","other":"il y a {0} heures"}}},"minute":{"displayName":"minute","relativeTime":{"future":{"one":"Dans {0} minute","other":"Dans {0} minutes"},"past":{"one":"Il y a {0} minute","other":"Il y a {0} minutes"}}},"second":{"displayName":"seconde","relative":{"0":"maintenant"},"relativeTime":{"future":{"one":"dans {0} seconde","other":"dans {0} secondes"},"past":{"one":"il y a {0} seconde","other":"il y a {0} secondes"}}}}});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-CD","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-CF","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-CG","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-CH","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-CI","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-CM","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-DJ","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-DZ","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-GA","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-GF","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-GN","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-GP","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-GQ","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-HT","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-KM","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-LU","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-MA","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-MC","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-MF","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-MG","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-ML","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-MQ","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-MR","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-MU","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-NC","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-NE","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-PF","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-PM","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-RE","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-RW","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-SC","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-SN","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-SY","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-TD","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-TG","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-TN","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-VU","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-WF","parentLocale":"fr"});
-IntlRelativeFormat.__addLocaleData({"locale":"fr-YT","parentLocale":"fr"});
-
-},{}],7:[function(require,module,exports){
-/* jshint node:true */
-
-'use strict';
-
-var IntlRelativeFormat = require('./lib/main')['default'];
-
-// Add all locale data to `IntlRelativeFormat`. This module will be ignored when
-// bundling for the browser with Browserify/Webpack.
-require('./lib/locales');
-
-// Re-export `IntlRelativeFormat` as the CommonJS default exports with all the
-// locale data registered, and with English set as the default locale. Define
-// the `default` prop for use with other compiled ES6 Modules.
-exports = module.exports = IntlRelativeFormat;
-exports['default'] = exports;
-
-},{"./lib/locales":1,"./lib/main":12}],8:[function(require,module,exports){
-/*
-Copyright (c) 2014, Yahoo! Inc. All rights reserved.
-Copyrights licensed under the New BSD License.
-See the accompanying LICENSE file for terms.
-*/
-
-/* jslint esnext: true */
-
-"use strict";
-var intl$messageformat$$ = require("intl-messageformat"), src$diff$$ = require("./diff"), src$es5$$ = require("./es5");
-exports["default"] = RelativeFormat;
-
-// -----------------------------------------------------------------------------
-
-var FIELDS = ['second', 'minute', 'hour', 'day', 'month', 'year'];
-var STYLES = ['best fit', 'numeric'];
-
-// -- RelativeFormat -----------------------------------------------------------
-
-function RelativeFormat(locales, options) {
-    options = options || {};
-
-    // Make a copy of `locales` if it's an array, so that it doesn't change
-    // since it's used lazily.
-    if (src$es5$$.isArray(locales)) {
-        locales = locales.concat();
-    }
-
-    src$es5$$.defineProperty(this, '_locale', {value: this._resolveLocale(locales)});
-    src$es5$$.defineProperty(this, '_options', {value: {
-        style: this._resolveStyle(options.style),
-        units: this._isValidUnits(options.units) && options.units
-    }});
-
-    src$es5$$.defineProperty(this, '_locales', {value: locales});
-    src$es5$$.defineProperty(this, '_fields', {value: this._findFields(this._locale)});
-    src$es5$$.defineProperty(this, '_messages', {value: src$es5$$.objCreate(null)});
-
-    // "Bind" `format()` method to `this` so it can be passed by reference like
-    // the other `Intl` APIs.
-    var relativeFormat = this;
-    this.format = function format(date, options) {
-        return relativeFormat._format(date, options);
-    };
-}
-
-// Define internal private properties for dealing with locale data.
-src$es5$$.defineProperty(RelativeFormat, '__localeData__', {value: src$es5$$.objCreate(null)});
-src$es5$$.defineProperty(RelativeFormat, '__addLocaleData', {value: function (data) {
-    if (!(data && data.locale)) {
-        throw new Error(
-            'Locale data provided to IntlRelativeFormat is missing a ' +
-            '`locale` property value'
-        );
-    }
-
-    RelativeFormat.__localeData__[data.locale.toLowerCase()] = data;
-
-    // Add data to IntlMessageFormat.
-    intl$messageformat$$["default"].__addLocaleData(data);
-}});
-
-// Define public `defaultLocale` property which can be set by the developer, or
-// it will be set when the first RelativeFormat instance is created by
-// leveraging the resolved locale from `Intl`.
-src$es5$$.defineProperty(RelativeFormat, 'defaultLocale', {
-    enumerable: true,
-    writable  : true,
-    value     : undefined
-});
-
-// Define public `thresholds` property which can be set by the developer, and
-// defaults to relative time thresholds from moment.js.
-src$es5$$.defineProperty(RelativeFormat, 'thresholds', {
-    enumerable: true,
-
-    value: {
-        second: 45,  // seconds to minute
-        minute: 45,  // minutes to hour
-        hour  : 22,  // hours to day
-        day   : 26,  // days to month
-        month : 11   // months to year
-    }
-});
-
-RelativeFormat.prototype.resolvedOptions = function () {
-    return {
-        locale: this._locale,
-        style : this._options.style,
-        units : this._options.units
-    };
-};
-
-RelativeFormat.prototype._compileMessage = function (units) {
-    // `this._locales` is the original set of locales the user specified to the
-    // constructor, while `this._locale` is the resolved root locale.
-    var locales        = this._locales;
-    var resolvedLocale = this._locale;
-
-    var field        = this._fields[units];
-    var relativeTime = field.relativeTime;
-    var future       = '';
-    var past         = '';
-    var i;
-
-    for (i in relativeTime.future) {
-        if (relativeTime.future.hasOwnProperty(i)) {
-            future += ' ' + i + ' {' +
-                relativeTime.future[i].replace('{0}', '#') + '}';
-        }
-    }
-
-    for (i in relativeTime.past) {
-        if (relativeTime.past.hasOwnProperty(i)) {
-            past += ' ' + i + ' {' +
-                relativeTime.past[i].replace('{0}', '#') + '}';
-        }
-    }
-
-    var message = '{when, select, future {{0, plural, ' + future + '}}' +
-                                 'past {{0, plural, ' + past + '}}}';
-
-    // Create the synthetic IntlMessageFormat instance using the original
-    // locales value specified by the user when constructing the the parent
-    // IntlRelativeFormat instance.
-    return new intl$messageformat$$["default"](message, locales);
-};
-
-RelativeFormat.prototype._getMessage = function (units) {
-    var messages = this._messages;
-
-    // Create a new synthetic message based on the locale data from CLDR.
-    if (!messages[units]) {
-        messages[units] = this._compileMessage(units);
-    }
-
-    return messages[units];
-};
-
-RelativeFormat.prototype._getRelativeUnits = function (diff, units) {
-    var field = this._fields[units];
-
-    if (field.relative) {
-        return field.relative[diff];
-    }
-};
-
-RelativeFormat.prototype._findFields = function (locale) {
-    var localeData = RelativeFormat.__localeData__;
-    var data       = localeData[locale.toLowerCase()];
-
-    // The locale data is de-duplicated, so we have to traverse the locale's
-    // hierarchy until we find `fields` to return.
-    while (data) {
-        if (data.fields) {
-            return data.fields;
-        }
-
-        data = data.parentLocale && localeData[data.parentLocale.toLowerCase()];
-    }
-
-    throw new Error(
-        'Locale data added to IntlRelativeFormat is missing `fields` for :' +
-        locale
-    );
-};
-
-RelativeFormat.prototype._format = function (date, options) {
-    var now = options && options.now !== undefined ? options.now : src$es5$$.dateNow();
-
-    if (date === undefined) {
-        date = now;
-    }
-
-    // Determine if the `date` and optional `now` values are valid, and throw a
-    // similar error to what `Intl.DateTimeFormat#format()` would throw.
-    if (!isFinite(now)) {
-        throw new RangeError(
-            'The `now` option provided to IntlRelativeFormat#format() is not ' +
-            'in valid range.'
-        );
-    }
-
-    if (!isFinite(date)) {
-        throw new RangeError(
-            'The date value provided to IntlRelativeFormat#format() is not ' +
-            'in valid range.'
-        );
-    }
-
-    var diffReport  = src$diff$$["default"](now, date);
-    var units       = this._options.units || this._selectUnits(diffReport);
-    var diffInUnits = diffReport[units];
-
-    if (this._options.style !== 'numeric') {
-        var relativeUnits = this._getRelativeUnits(diffInUnits, units);
-        if (relativeUnits) {
-            return relativeUnits;
-        }
-    }
-
-    return this._getMessage(units).format({
-        '0' : Math.abs(diffInUnits),
-        when: diffInUnits < 0 ? 'past' : 'future'
-    });
-};
-
-RelativeFormat.prototype._isValidUnits = function (units) {
-    if (!units || src$es5$$.arrIndexOf.call(FIELDS, units) >= 0) {
-        return true;
-    }
-
-    if (typeof units === 'string') {
-        var suggestion = /s$/.test(units) && units.substr(0, units.length - 1);
-        if (suggestion && src$es5$$.arrIndexOf.call(FIELDS, suggestion) >= 0) {
-            throw new Error(
-                '"' + units + '" is not a valid IntlRelativeFormat `units` ' +
-                'value, did you mean: ' + suggestion
-            );
-        }
-    }
-
-    throw new Error(
-        '"' + units + '" is not a valid IntlRelativeFormat `units` value, it ' +
-        'must be one of: "' + FIELDS.join('", "') + '"'
-    );
-};
-
-RelativeFormat.prototype._resolveLocale = function (locales) {
-    if (typeof locales === 'string') {
-        locales = [locales];
-    }
-
-    // Create a copy of the array so we can push on the default locale.
-    locales = (locales || []).concat(RelativeFormat.defaultLocale);
-
-    var localeData = RelativeFormat.__localeData__;
-    var i, len, localeParts, data;
-
-    // Using the set of locales + the default locale, we look for the first one
-    // which that has been registered. When data does not exist for a locale, we
-    // traverse its ancestors to find something that's been registered within
-    // its hierarchy of locales. Since we lack the proper `parentLocale` data
-    // here, we must take a naive approach to traversal.
-    for (i = 0, len = locales.length; i < len; i += 1) {
-        localeParts = locales[i].toLowerCase().split('-');
-
-        while (localeParts.length) {
-            data = localeData[localeParts.join('-')];
-            if (data) {
-                // Return the normalized locale string; e.g., we return "en-US",
-                // instead of "en-us".
-                return data.locale;
-            }
-
-            localeParts.pop();
-        }
-    }
-
-    var defaultLocale = locales.pop();
-    throw new Error(
-        'No locale data has been added to IntlRelativeFormat for: ' +
-        locales.join(', ') + ', or the default locale: ' + defaultLocale
-    );
-};
-
-RelativeFormat.prototype._resolveStyle = function (style) {
-    // Default to "best fit" style.
-    if (!style) {
-        return STYLES[0];
-    }
-
-    if (src$es5$$.arrIndexOf.call(STYLES, style) >= 0) {
-        return style;
-    }
-
-    throw new Error(
-        '"' + style + '" is not a valid IntlRelativeFormat `style` value, it ' +
-        'must be one of: "' + STYLES.join('", "') + '"'
-    );
-};
-
-RelativeFormat.prototype._selectUnits = function (diffReport) {
-    var i, l, units;
-
-    for (i = 0, l = FIELDS.length; i < l; i += 1) {
-        units = FIELDS[i];
-
-        if (Math.abs(diffReport[units]) < RelativeFormat.thresholds[units]) {
-            break;
-        }
-    }
-
-    return units;
-};
-
-
-},{"./diff":9,"./es5":11,"intl-messageformat":13}],9:[function(require,module,exports){
-/*
-Copyright (c) 2014, Yahoo! Inc. All rights reserved.
-Copyrights licensed under the New BSD License.
-See the accompanying LICENSE file for terms.
-*/
-
-/* jslint esnext: true */
-
-"use strict";
-
-var round = Math.round;
-
-function daysToYears(days) {
-    // 400 years have 146097 days (taking into account leap year rules)
-    return days * 400 / 146097;
-}
-
-exports["default"] = function (from, to) {
-    // Convert to ms timestamps.
-    from = +from;
-    to   = +to;
-
-    var millisecond = round(to - from),
-        second      = round(millisecond / 1000),
-        minute      = round(second / 60),
-        hour        = round(minute / 60),
-        day         = round(hour / 24),
-        week        = round(day / 7);
-
-    var rawYears = daysToYears(day),
-        month    = round(rawYears * 12),
-        year     = round(rawYears);
-
-    return {
-        millisecond: millisecond,
-        second     : second,
-        minute     : minute,
-        hour       : hour,
-        day        : day,
-        week       : week,
-        month      : month,
-        year       : year
-    };
-};
-
-
-},{}],10:[function(require,module,exports){
-// GENERATED FILE
-"use strict";
-exports["default"] = {"locale":"en","pluralRuleFunction":function (n,ord){var s=String(n).split("."),v0=!s[1],t0=Number(s[0])==n,n10=t0&&s[0].slice(-1),n100=t0&&s[0].slice(-2);if(ord)return n10==1&&n100!=11?"one":n10==2&&n100!=12?"two":n10==3&&n100!=13?"few":"other";return n==1&&v0?"one":"other"},"fields":{"year":{"displayName":"year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"one":"in {0} year","other":"in {0} years"},"past":{"one":"{0} year ago","other":"{0} years ago"}}},"month":{"displayName":"month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"one":"in {0} month","other":"in {0} months"},"past":{"one":"{0} month ago","other":"{0} months ago"}}},"day":{"displayName":"day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"one":"in {0} day","other":"in {0} days"},"past":{"one":"{0} day ago","other":"{0} days ago"}}},"hour":{"displayName":"hour","relativeTime":{"future":{"one":"in {0} hour","other":"in {0} hours"},"past":{"one":"{0} hour ago","other":"{0} hours ago"}}},"minute":{"displayName":"minute","relativeTime":{"future":{"one":"in {0} minute","other":"in {0} minutes"},"past":{"one":"{0} minute ago","other":"{0} minutes ago"}}},"second":{"displayName":"second","relative":{"0":"now"},"relativeTime":{"future":{"one":"in {0} second","other":"in {0} seconds"},"past":{"one":"{0} second ago","other":"{0} seconds ago"}}}}};
-
-
-},{}],11:[function(require,module,exports){
-/*
-Copyright (c) 2014, Yahoo! Inc. All rights reserved.
-Copyrights licensed under the New BSD License.
-See the accompanying LICENSE file for terms.
-*/
-
-/* jslint esnext: true */
-
-"use strict";
-
-// Purposely using the same implementation as the Intl.js `Intl` polyfill.
-// Copyright 2013 Andy Earnshaw, MIT License
-
-var hop = Object.prototype.hasOwnProperty;
-var toString = Object.prototype.toString;
-
-var realDefineProp = (function () {
-    try { return !!Object.defineProperty({}, 'a', {}); }
-    catch (e) { return false; }
-})();
-
-var es3 = !realDefineProp && !Object.prototype.__defineGetter__;
-
-var defineProperty = realDefineProp ? Object.defineProperty :
-        function (obj, name, desc) {
-
-    if ('get' in desc && obj.__defineGetter__) {
-        obj.__defineGetter__(name, desc.get);
-    } else if (!hop.call(obj, name) || 'value' in desc) {
-        obj[name] = desc.value;
-    }
-};
-
-var objCreate = Object.create || function (proto, props) {
-    var obj, k;
-
-    function F() {}
-    F.prototype = proto;
-    obj = new F();
-
-    for (k in props) {
-        if (hop.call(props, k)) {
-            defineProperty(obj, k, props[k]);
-        }
-    }
-
-    return obj;
-};
-
-var arrIndexOf = Array.prototype.indexOf || function (search, fromIndex) {
-    /*jshint validthis:true */
-    var arr = this;
-    if (!arr.length) {
-        return -1;
-    }
-
-    for (var i = fromIndex || 0, max = arr.length; i < max; i++) {
-        if (arr[i] === search) {
-            return i;
-        }
-    }
-
-    return -1;
-};
-
-var isArray = Array.isArray || function (obj) {
-    return toString.call(obj) === '[object Array]';
-};
-
-var dateNow = Date.now || function () {
-    return new Date().getTime();
-};
-exports.defineProperty = defineProperty, exports.objCreate = objCreate, exports.arrIndexOf = arrIndexOf, exports.isArray = isArray, exports.dateNow = dateNow;
-
-
-},{}],12:[function(require,module,exports){
-/* jslint esnext: true */
-
-"use strict";
-var src$core$$ = require("./core"), src$en$$ = require("./en");
-
-src$core$$["default"].__addLocaleData(src$en$$["default"]);
-src$core$$["default"].defaultLocale = 'en';
-
-exports["default"] = src$core$$["default"];
-
-
-},{"./core":8,"./en":10}],13:[function(require,module,exports){
 /* jshint node:true */
 
 'use strict';
@@ -855,7 +214,7 @@ require('./lib/locales');
 exports = module.exports = IntlMessageFormat;
 exports['default'] = exports;
 
-},{"./lib/locales":1,"./lib/main":18}],14:[function(require,module,exports){
+},{"./lib/locales":1,"./lib/main":9}],5:[function(require,module,exports){
 /*
 Copyright (c) 2014, Yahoo! Inc. All rights reserved.
 Copyrights licensed under the New BSD License.
@@ -1065,7 +424,7 @@ SelectFormat.prototype.getOption = function (value) {
 };
 
 
-},{}],15:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /*
 Copyright (c) 2014, Yahoo! Inc. All rights reserved.
 Copyrights licensed under the New BSD License.
@@ -1330,13 +689,13 @@ MessageFormat.prototype._resolveLocale = function (locales) {
 };
 
 
-},{"./compiler":14,"./es5":17,"./utils":19,"intl-messageformat-parser":20}],16:[function(require,module,exports){
+},{"./compiler":5,"./es5":8,"./utils":10,"intl-messageformat-parser":11}],7:[function(require,module,exports){
 // GENERATED FILE
 "use strict";
 exports["default"] = {"locale":"en","pluralRuleFunction":function (n,ord){var s=String(n).split("."),v0=!s[1],t0=Number(s[0])==n,n10=t0&&s[0].slice(-1),n100=t0&&s[0].slice(-2);if(ord)return n10==1&&n100!=11?"one":n10==2&&n100!=12?"two":n10==3&&n100!=13?"few":"other";return n==1&&v0?"one":"other"}};
 
 
-},{}],17:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 /*
 Copyright (c) 2014, Yahoo! Inc. All rights reserved.
 Copyrights licensed under the New BSD License.
@@ -1386,9 +745,19 @@ var objCreate = Object.create || function (proto, props) {
 exports.defineProperty = defineProperty, exports.objCreate = objCreate;
 
 
-},{"./utils":19}],18:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"./core":15,"./en":16,"dup":12}],19:[function(require,module,exports){
+},{"./utils":10}],9:[function(require,module,exports){
+/* jslint esnext: true */
+
+"use strict";
+var src$core$$ = require("./core"), src$en$$ = require("./en");
+
+src$core$$["default"].__addLocaleData(src$en$$["default"]);
+src$core$$["default"].defaultLocale = 'en';
+
+exports["default"] = src$core$$["default"];
+
+
+},{"./core":6,"./en":7}],10:[function(require,module,exports){
 /*
 Copyright (c) 2014, Yahoo! Inc. All rights reserved.
 Copyrights licensed under the New BSD License.
@@ -1421,13 +790,13 @@ function extend(obj) {
 exports.hop = hop;
 
 
-},{}],20:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 'use strict';
 
 exports = module.exports = require('./lib/parser')['default'];
 exports['default'] = exports;
 
-},{"./lib/parser":21}],21:[function(require,module,exports){
+},{"./lib/parser":12}],12:[function(require,module,exports){
 "use strict";
 
 exports["default"] = (function() {
@@ -2787,7 +2156,608 @@ exports["default"] = (function() {
 })();
 
 
-},{}],22:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
+IntlRelativeFormat.__addLocaleData({"locale":"en","pluralRuleFunction":function (n,ord){var s=String(n).split("."),v0=!s[1],t0=Number(s[0])==n,n10=t0&&s[0].slice(-1),n100=t0&&s[0].slice(-2);if(ord)return n10==1&&n100!=11?"one":n10==2&&n100!=12?"two":n10==3&&n100!=13?"few":"other";return n==1&&v0?"one":"other"},"fields":{"year":{"displayName":"year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"one":"in {0} year","other":"in {0} years"},"past":{"one":"{0} year ago","other":"{0} years ago"}}},"month":{"displayName":"month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"one":"in {0} month","other":"in {0} months"},"past":{"one":"{0} month ago","other":"{0} months ago"}}},"day":{"displayName":"day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"one":"in {0} day","other":"in {0} days"},"past":{"one":"{0} day ago","other":"{0} days ago"}}},"hour":{"displayName":"hour","relativeTime":{"future":{"one":"in {0} hour","other":"in {0} hours"},"past":{"one":"{0} hour ago","other":"{0} hours ago"}}},"minute":{"displayName":"minute","relativeTime":{"future":{"one":"in {0} minute","other":"in {0} minutes"},"past":{"one":"{0} minute ago","other":"{0} minutes ago"}}},"second":{"displayName":"second","relative":{"0":"now"},"relativeTime":{"future":{"one":"in {0} second","other":"in {0} seconds"},"past":{"one":"{0} second ago","other":"{0} seconds ago"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"en-001","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-150","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-AG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-AI","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-AS","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-AT","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-AU","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BB","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BE","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BI","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BS","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BW","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BZ","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CA","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CC","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CH","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CK","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CX","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CY","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-DE","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-DG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-DK","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-DM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-Dsrt","pluralRuleFunction":function (n,ord){if(ord)return"other";return"other"},"fields":{"year":{"displayName":"Year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"other":"+{0} y"},"past":{"other":"-{0} y"}}},"month":{"displayName":"Month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"other":"+{0} m"},"past":{"other":"-{0} m"}}},"day":{"displayName":"Day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"other":"+{0} d"},"past":{"other":"-{0} d"}}},"hour":{"displayName":"Hour","relativeTime":{"future":{"other":"+{0} h"},"past":{"other":"-{0} h"}}},"minute":{"displayName":"Minute","relativeTime":{"future":{"other":"+{0} min"},"past":{"other":"-{0} min"}}},"second":{"displayName":"Second","relative":{"0":"now"},"relativeTime":{"future":{"other":"+{0} s"},"past":{"other":"-{0} s"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"en-ER","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-FI","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-FJ","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-FK","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-FM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GB","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GD","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GH","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GI","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GU","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GY","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-HK","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-IE","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-IL","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-IM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-IN","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-IO","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-JE","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-JM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-KE","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-KI","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-KN","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-KY","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-LC","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-LR","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-LS","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MH","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MO","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MP","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MS","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MT","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MU","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MW","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MY","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NA","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NF","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NL","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NR","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NU","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NZ","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PH","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PK","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PN","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PR","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PW","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-RW","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SB","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SC","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SD","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SE","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SH","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SI","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SL","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SS","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SX","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SZ","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-Shaw","pluralRuleFunction":function (n,ord){if(ord)return"other";return"other"},"fields":{"year":{"displayName":"Year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"other":"+{0} y"},"past":{"other":"-{0} y"}}},"month":{"displayName":"Month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"other":"+{0} m"},"past":{"other":"-{0} m"}}},"day":{"displayName":"Day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"other":"+{0} d"},"past":{"other":"-{0} d"}}},"hour":{"displayName":"Hour","relativeTime":{"future":{"other":"+{0} h"},"past":{"other":"-{0} h"}}},"minute":{"displayName":"Minute","relativeTime":{"future":{"other":"+{0} min"},"past":{"other":"-{0} min"}}},"second":{"displayName":"Second","relative":{"0":"now"},"relativeTime":{"future":{"other":"+{0} s"},"past":{"other":"-{0} s"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TC","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TK","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TO","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TT","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TV","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TZ","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-UG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-UM","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-US","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-VC","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-VG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-VI","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-VU","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-WS","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-ZA","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-ZM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-ZW","parentLocale":"en-001"});
+
+},{}],14:[function(require,module,exports){
+IntlRelativeFormat.__addLocaleData({"locale":"es","pluralRuleFunction":function (n,ord){if(ord)return"other";return n==1?"one":"other"},"fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"anteayer","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-419","parentLocale":"es"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-AR","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-BO","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-CL","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-CO","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-CR","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-CU","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-DO","parentLocale":"es-419","fields":{"year":{"displayName":"Año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"Mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"Día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"anteayer","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"Minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"Segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-EA","parentLocale":"es"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-EC","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-GQ","parentLocale":"es"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-GT","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-HN","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-IC","parentLocale":"es"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-MX","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el año próximo","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el mes próximo","-1":"el mes pasado"},"relativeTime":{"future":{"one":"en {0} mes","other":"en {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-NI","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-PA","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-PE","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-PH","parentLocale":"es"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-PR","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-PY","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antes de ayer","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-SV","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-US","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-UY","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-VE","parentLocale":"es-419"});
+
+},{}],15:[function(require,module,exports){
+/* jshint node:true */
+
+'use strict';
+
+var IntlRelativeFormat = require('./lib/main')['default'];
+
+// Add all locale data to `IntlRelativeFormat`. This module will be ignored when
+// bundling for the browser with Browserify/Webpack.
+require('./lib/locales');
+
+// Re-export `IntlRelativeFormat` as the CommonJS default exports with all the
+// locale data registered, and with English set as the default locale. Define
+// the `default` prop for use with other compiled ES6 Modules.
+exports = module.exports = IntlRelativeFormat;
+exports['default'] = exports;
+
+},{"./lib/locales":1,"./lib/main":20}],16:[function(require,module,exports){
+/*
+Copyright (c) 2014, Yahoo! Inc. All rights reserved.
+Copyrights licensed under the New BSD License.
+See the accompanying LICENSE file for terms.
+*/
+
+/* jslint esnext: true */
+
+"use strict";
+var intl$messageformat$$ = require("intl-messageformat"), src$diff$$ = require("./diff"), src$es5$$ = require("./es5");
+exports["default"] = RelativeFormat;
+
+// -----------------------------------------------------------------------------
+
+var FIELDS = ['second', 'minute', 'hour', 'day', 'month', 'year'];
+var STYLES = ['best fit', 'numeric'];
+
+// -- RelativeFormat -----------------------------------------------------------
+
+function RelativeFormat(locales, options) {
+    options = options || {};
+
+    // Make a copy of `locales` if it's an array, so that it doesn't change
+    // since it's used lazily.
+    if (src$es5$$.isArray(locales)) {
+        locales = locales.concat();
+    }
+
+    src$es5$$.defineProperty(this, '_locale', {value: this._resolveLocale(locales)});
+    src$es5$$.defineProperty(this, '_options', {value: {
+        style: this._resolveStyle(options.style),
+        units: this._isValidUnits(options.units) && options.units
+    }});
+
+    src$es5$$.defineProperty(this, '_locales', {value: locales});
+    src$es5$$.defineProperty(this, '_fields', {value: this._findFields(this._locale)});
+    src$es5$$.defineProperty(this, '_messages', {value: src$es5$$.objCreate(null)});
+
+    // "Bind" `format()` method to `this` so it can be passed by reference like
+    // the other `Intl` APIs.
+    var relativeFormat = this;
+    this.format = function format(date, options) {
+        return relativeFormat._format(date, options);
+    };
+}
+
+// Define internal private properties for dealing with locale data.
+src$es5$$.defineProperty(RelativeFormat, '__localeData__', {value: src$es5$$.objCreate(null)});
+src$es5$$.defineProperty(RelativeFormat, '__addLocaleData', {value: function (data) {
+    if (!(data && data.locale)) {
+        throw new Error(
+            'Locale data provided to IntlRelativeFormat is missing a ' +
+            '`locale` property value'
+        );
+    }
+
+    RelativeFormat.__localeData__[data.locale.toLowerCase()] = data;
+
+    // Add data to IntlMessageFormat.
+    intl$messageformat$$["default"].__addLocaleData(data);
+}});
+
+// Define public `defaultLocale` property which can be set by the developer, or
+// it will be set when the first RelativeFormat instance is created by
+// leveraging the resolved locale from `Intl`.
+src$es5$$.defineProperty(RelativeFormat, 'defaultLocale', {
+    enumerable: true,
+    writable  : true,
+    value     : undefined
+});
+
+// Define public `thresholds` property which can be set by the developer, and
+// defaults to relative time thresholds from moment.js.
+src$es5$$.defineProperty(RelativeFormat, 'thresholds', {
+    enumerable: true,
+
+    value: {
+        second: 45,  // seconds to minute
+        minute: 45,  // minutes to hour
+        hour  : 22,  // hours to day
+        day   : 26,  // days to month
+        month : 11   // months to year
+    }
+});
+
+RelativeFormat.prototype.resolvedOptions = function () {
+    return {
+        locale: this._locale,
+        style : this._options.style,
+        units : this._options.units
+    };
+};
+
+RelativeFormat.prototype._compileMessage = function (units) {
+    // `this._locales` is the original set of locales the user specified to the
+    // constructor, while `this._locale` is the resolved root locale.
+    var locales        = this._locales;
+    var resolvedLocale = this._locale;
+
+    var field        = this._fields[units];
+    var relativeTime = field.relativeTime;
+    var future       = '';
+    var past         = '';
+    var i;
+
+    for (i in relativeTime.future) {
+        if (relativeTime.future.hasOwnProperty(i)) {
+            future += ' ' + i + ' {' +
+                relativeTime.future[i].replace('{0}', '#') + '}';
+        }
+    }
+
+    for (i in relativeTime.past) {
+        if (relativeTime.past.hasOwnProperty(i)) {
+            past += ' ' + i + ' {' +
+                relativeTime.past[i].replace('{0}', '#') + '}';
+        }
+    }
+
+    var message = '{when, select, future {{0, plural, ' + future + '}}' +
+                                 'past {{0, plural, ' + past + '}}}';
+
+    // Create the synthetic IntlMessageFormat instance using the original
+    // locales value specified by the user when constructing the the parent
+    // IntlRelativeFormat instance.
+    return new intl$messageformat$$["default"](message, locales);
+};
+
+RelativeFormat.prototype._getMessage = function (units) {
+    var messages = this._messages;
+
+    // Create a new synthetic message based on the locale data from CLDR.
+    if (!messages[units]) {
+        messages[units] = this._compileMessage(units);
+    }
+
+    return messages[units];
+};
+
+RelativeFormat.prototype._getRelativeUnits = function (diff, units) {
+    var field = this._fields[units];
+
+    if (field.relative) {
+        return field.relative[diff];
+    }
+};
+
+RelativeFormat.prototype._findFields = function (locale) {
+    var localeData = RelativeFormat.__localeData__;
+    var data       = localeData[locale.toLowerCase()];
+
+    // The locale data is de-duplicated, so we have to traverse the locale's
+    // hierarchy until we find `fields` to return.
+    while (data) {
+        if (data.fields) {
+            return data.fields;
+        }
+
+        data = data.parentLocale && localeData[data.parentLocale.toLowerCase()];
+    }
+
+    throw new Error(
+        'Locale data added to IntlRelativeFormat is missing `fields` for :' +
+        locale
+    );
+};
+
+RelativeFormat.prototype._format = function (date, options) {
+    var now = options && options.now !== undefined ? options.now : src$es5$$.dateNow();
+
+    if (date === undefined) {
+        date = now;
+    }
+
+    // Determine if the `date` and optional `now` values are valid, and throw a
+    // similar error to what `Intl.DateTimeFormat#format()` would throw.
+    if (!isFinite(now)) {
+        throw new RangeError(
+            'The `now` option provided to IntlRelativeFormat#format() is not ' +
+            'in valid range.'
+        );
+    }
+
+    if (!isFinite(date)) {
+        throw new RangeError(
+            'The date value provided to IntlRelativeFormat#format() is not ' +
+            'in valid range.'
+        );
+    }
+
+    var diffReport  = src$diff$$["default"](now, date);
+    var units       = this._options.units || this._selectUnits(diffReport);
+    var diffInUnits = diffReport[units];
+
+    if (this._options.style !== 'numeric') {
+        var relativeUnits = this._getRelativeUnits(diffInUnits, units);
+        if (relativeUnits) {
+            return relativeUnits;
+        }
+    }
+
+    return this._getMessage(units).format({
+        '0' : Math.abs(diffInUnits),
+        when: diffInUnits < 0 ? 'past' : 'future'
+    });
+};
+
+RelativeFormat.prototype._isValidUnits = function (units) {
+    if (!units || src$es5$$.arrIndexOf.call(FIELDS, units) >= 0) {
+        return true;
+    }
+
+    if (typeof units === 'string') {
+        var suggestion = /s$/.test(units) && units.substr(0, units.length - 1);
+        if (suggestion && src$es5$$.arrIndexOf.call(FIELDS, suggestion) >= 0) {
+            throw new Error(
+                '"' + units + '" is not a valid IntlRelativeFormat `units` ' +
+                'value, did you mean: ' + suggestion
+            );
+        }
+    }
+
+    throw new Error(
+        '"' + units + '" is not a valid IntlRelativeFormat `units` value, it ' +
+        'must be one of: "' + FIELDS.join('", "') + '"'
+    );
+};
+
+RelativeFormat.prototype._resolveLocale = function (locales) {
+    if (typeof locales === 'string') {
+        locales = [locales];
+    }
+
+    // Create a copy of the array so we can push on the default locale.
+    locales = (locales || []).concat(RelativeFormat.defaultLocale);
+
+    var localeData = RelativeFormat.__localeData__;
+    var i, len, localeParts, data;
+
+    // Using the set of locales + the default locale, we look for the first one
+    // which that has been registered. When data does not exist for a locale, we
+    // traverse its ancestors to find something that's been registered within
+    // its hierarchy of locales. Since we lack the proper `parentLocale` data
+    // here, we must take a naive approach to traversal.
+    for (i = 0, len = locales.length; i < len; i += 1) {
+        localeParts = locales[i].toLowerCase().split('-');
+
+        while (localeParts.length) {
+            data = localeData[localeParts.join('-')];
+            if (data) {
+                // Return the normalized locale string; e.g., we return "en-US",
+                // instead of "en-us".
+                return data.locale;
+            }
+
+            localeParts.pop();
+        }
+    }
+
+    var defaultLocale = locales.pop();
+    throw new Error(
+        'No locale data has been added to IntlRelativeFormat for: ' +
+        locales.join(', ') + ', or the default locale: ' + defaultLocale
+    );
+};
+
+RelativeFormat.prototype._resolveStyle = function (style) {
+    // Default to "best fit" style.
+    if (!style) {
+        return STYLES[0];
+    }
+
+    if (src$es5$$.arrIndexOf.call(STYLES, style) >= 0) {
+        return style;
+    }
+
+    throw new Error(
+        '"' + style + '" is not a valid IntlRelativeFormat `style` value, it ' +
+        'must be one of: "' + STYLES.join('", "') + '"'
+    );
+};
+
+RelativeFormat.prototype._selectUnits = function (diffReport) {
+    var i, l, units;
+
+    for (i = 0, l = FIELDS.length; i < l; i += 1) {
+        units = FIELDS[i];
+
+        if (Math.abs(diffReport[units]) < RelativeFormat.thresholds[units]) {
+            break;
+        }
+    }
+
+    return units;
+};
+
+
+},{"./diff":17,"./es5":19,"intl-messageformat":21}],17:[function(require,module,exports){
+/*
+Copyright (c) 2014, Yahoo! Inc. All rights reserved.
+Copyrights licensed under the New BSD License.
+See the accompanying LICENSE file for terms.
+*/
+
+/* jslint esnext: true */
+
+"use strict";
+
+var round = Math.round;
+
+function daysToYears(days) {
+    // 400 years have 146097 days (taking into account leap year rules)
+    return days * 400 / 146097;
+}
+
+exports["default"] = function (from, to) {
+    // Convert to ms timestamps.
+    from = +from;
+    to   = +to;
+
+    var millisecond = round(to - from),
+        second      = round(millisecond / 1000),
+        minute      = round(second / 60),
+        hour        = round(minute / 60),
+        day         = round(hour / 24),
+        week        = round(day / 7);
+
+    var rawYears = daysToYears(day),
+        month    = round(rawYears * 12),
+        year     = round(rawYears);
+
+    return {
+        millisecond: millisecond,
+        second     : second,
+        minute     : minute,
+        hour       : hour,
+        day        : day,
+        week       : week,
+        month      : month,
+        year       : year
+    };
+};
+
+
+},{}],18:[function(require,module,exports){
+// GENERATED FILE
+"use strict";
+exports["default"] = {"locale":"en","pluralRuleFunction":function (n,ord){var s=String(n).split("."),v0=!s[1],t0=Number(s[0])==n,n10=t0&&s[0].slice(-1),n100=t0&&s[0].slice(-2);if(ord)return n10==1&&n100!=11?"one":n10==2&&n100!=12?"two":n10==3&&n100!=13?"few":"other";return n==1&&v0?"one":"other"},"fields":{"year":{"displayName":"year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"one":"in {0} year","other":"in {0} years"},"past":{"one":"{0} year ago","other":"{0} years ago"}}},"month":{"displayName":"month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"one":"in {0} month","other":"in {0} months"},"past":{"one":"{0} month ago","other":"{0} months ago"}}},"day":{"displayName":"day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"one":"in {0} day","other":"in {0} days"},"past":{"one":"{0} day ago","other":"{0} days ago"}}},"hour":{"displayName":"hour","relativeTime":{"future":{"one":"in {0} hour","other":"in {0} hours"},"past":{"one":"{0} hour ago","other":"{0} hours ago"}}},"minute":{"displayName":"minute","relativeTime":{"future":{"one":"in {0} minute","other":"in {0} minutes"},"past":{"one":"{0} minute ago","other":"{0} minutes ago"}}},"second":{"displayName":"second","relative":{"0":"now"},"relativeTime":{"future":{"one":"in {0} second","other":"in {0} seconds"},"past":{"one":"{0} second ago","other":"{0} seconds ago"}}}}};
+
+
+},{}],19:[function(require,module,exports){
+/*
+Copyright (c) 2014, Yahoo! Inc. All rights reserved.
+Copyrights licensed under the New BSD License.
+See the accompanying LICENSE file for terms.
+*/
+
+/* jslint esnext: true */
+
+"use strict";
+
+// Purposely using the same implementation as the Intl.js `Intl` polyfill.
+// Copyright 2013 Andy Earnshaw, MIT License
+
+var hop = Object.prototype.hasOwnProperty;
+var toString = Object.prototype.toString;
+
+var realDefineProp = (function () {
+    try { return !!Object.defineProperty({}, 'a', {}); }
+    catch (e) { return false; }
+})();
+
+var es3 = !realDefineProp && !Object.prototype.__defineGetter__;
+
+var defineProperty = realDefineProp ? Object.defineProperty :
+        function (obj, name, desc) {
+
+    if ('get' in desc && obj.__defineGetter__) {
+        obj.__defineGetter__(name, desc.get);
+    } else if (!hop.call(obj, name) || 'value' in desc) {
+        obj[name] = desc.value;
+    }
+};
+
+var objCreate = Object.create || function (proto, props) {
+    var obj, k;
+
+    function F() {}
+    F.prototype = proto;
+    obj = new F();
+
+    for (k in props) {
+        if (hop.call(props, k)) {
+            defineProperty(obj, k, props[k]);
+        }
+    }
+
+    return obj;
+};
+
+var arrIndexOf = Array.prototype.indexOf || function (search, fromIndex) {
+    /*jshint validthis:true */
+    var arr = this;
+    if (!arr.length) {
+        return -1;
+    }
+
+    for (var i = fromIndex || 0, max = arr.length; i < max; i++) {
+        if (arr[i] === search) {
+            return i;
+        }
+    }
+
+    return -1;
+};
+
+var isArray = Array.isArray || function (obj) {
+    return toString.call(obj) === '[object Array]';
+};
+
+var dateNow = Date.now || function () {
+    return new Date().getTime();
+};
+exports.defineProperty = defineProperty, exports.objCreate = objCreate, exports.arrIndexOf = arrIndexOf, exports.isArray = isArray, exports.dateNow = dateNow;
+
+
+},{}],20:[function(require,module,exports){
+arguments[4][9][0].apply(exports,arguments)
+},{"./core":16,"./en":18,"dup":9}],21:[function(require,module,exports){
+arguments[4][4][0].apply(exports,arguments)
+},{"./lib/locales":1,"./lib/main":26,"dup":4}],22:[function(require,module,exports){
+arguments[4][5][0].apply(exports,arguments)
+},{"dup":5}],23:[function(require,module,exports){
+arguments[4][6][0].apply(exports,arguments)
+},{"./compiler":22,"./es5":25,"./utils":27,"dup":6,"intl-messageformat-parser":28}],24:[function(require,module,exports){
+arguments[4][7][0].apply(exports,arguments)
+},{"dup":7}],25:[function(require,module,exports){
+arguments[4][8][0].apply(exports,arguments)
+},{"./utils":27,"dup":8}],26:[function(require,module,exports){
+arguments[4][9][0].apply(exports,arguments)
+},{"./core":23,"./en":24,"dup":9}],27:[function(require,module,exports){
+arguments[4][10][0].apply(exports,arguments)
+},{"dup":10}],28:[function(require,module,exports){
+arguments[4][11][0].apply(exports,arguments)
+},{"./lib/parser":29,"dup":11}],29:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],30:[function(require,module,exports){
 (function (global){
 // Expose `IntlPolyfill` as global to add locale data into runtime later on.
 global.IntlPolyfill = require('./lib/core.js');
@@ -2806,7 +2776,7 @@ if (!global.Intl) {
 module.exports = global.IntlPolyfill;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./lib/core.js":23,"./locale-data/complete.js":1}],23:[function(require,module,exports){
+},{"./lib/core.js":31,"./locale-data/complete.js":1}],31:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -7160,7 +7130,7 @@ defineProperty(Intl, '__disableRegExpRestore', {
 
 module.exports = Intl;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],24:[function(require,module,exports){
+},{}],32:[function(require,module,exports){
 //! moment.js
 //! version : 2.17.1
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
@@ -11463,7 +11433,7 @@ return hooks;
 
 })));
 
-},{}],25:[function(require,module,exports){
+},{}],33:[function(require,module,exports){
 (function (process){
   /* globals require, module */
 
@@ -12089,7 +12059,7 @@ return hooks;
   page.sameOrigin = sameOrigin;
 
 }).call(this,require('_process'))
-},{"_process":2,"path-to-regexp":26}],26:[function(require,module,exports){
+},{"_process":2,"path-to-regexp":34}],34:[function(require,module,exports){
 var isarray = require('isarray')
 
 /**
@@ -12481,12 +12451,12 @@ function pathToRegexp (path, keys, options) {
   return stringToRegexp(path, keys, options)
 }
 
-},{"isarray":27}],27:[function(require,module,exports){
+},{"isarray":35}],35:[function(require,module,exports){
 module.exports = Array.isArray || function (arr) {
   return Object.prototype.toString.call(arr) == '[object Array]';
 };
 
-},{}],28:[function(require,module,exports){
+},{}],36:[function(require,module,exports){
 
 var orig = document.title;
 
@@ -12509,7 +12479,7 @@ exports.reset = function(){
   set(orig);
 };
 
-},{}],29:[function(require,module,exports){
+},{}],37:[function(require,module,exports){
 var bel = require('bel') // turns template tag into DOM elements
 var morphdom = require('morphdom') // efficiently diffs + morphs two DOM elements
 var defaultEvents = require('./update-events.js') // default events to be copied when dom elements update
@@ -12553,7 +12523,7 @@ module.exports.update = function (fromNode, toNode, opts) {
   }
 }
 
-},{"./update-events.js":37,"bel":30,"morphdom":36}],30:[function(require,module,exports){
+},{"./update-events.js":45,"bel":38,"morphdom":44}],38:[function(require,module,exports){
 var document = require('global/document')
 var hyperx = require('hyperx')
 var onload = require('on-load')
@@ -12704,7 +12674,7 @@ module.exports = hyperx(belCreateElement)
 module.exports.default = module.exports
 module.exports.createElement = belCreateElement
 
-},{"global/document":31,"hyperx":33,"on-load":35}],31:[function(require,module,exports){
+},{"global/document":39,"hyperx":41,"on-load":43}],39:[function(require,module,exports){
 (function (global){
 var topLevel = typeof global !== 'undefined' ? global :
     typeof window !== 'undefined' ? window : {}
@@ -12723,7 +12693,7 @@ if (typeof document !== 'undefined') {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"min-document":1}],32:[function(require,module,exports){
+},{"min-document":1}],40:[function(require,module,exports){
 (function (global){
 if (typeof window !== "undefined") {
     module.exports = window;
@@ -12736,7 +12706,7 @@ if (typeof window !== "undefined") {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],33:[function(require,module,exports){
+},{}],41:[function(require,module,exports){
 var attrToProp = require('hyperscript-attribute-to-property')
 
 var VAR = 0, TEXT = 1, OPEN = 2, CLOSE = 3, ATTR = 4
@@ -13001,7 +12971,7 @@ var closeRE = RegExp('^(' + [
 ].join('|') + ')(?:[\.#][a-zA-Z0-9\u007F-\uFFFF_:-]+)*$')
 function selfClosing (tag) { return closeRE.test(tag) }
 
-},{"hyperscript-attribute-to-property":34}],34:[function(require,module,exports){
+},{"hyperscript-attribute-to-property":42}],42:[function(require,module,exports){
 module.exports = attributeToProperty
 
 var transform = {
@@ -13022,7 +12992,7 @@ function attributeToProperty (h) {
   }
 }
 
-},{}],35:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 /* global MutationObserver */
 var document = require('global/document')
 var window = require('global/window')
@@ -13111,7 +13081,7 @@ function eachMutation (nodes, fn) {
   }
 }
 
-},{"global/document":31,"global/window":32}],36:[function(require,module,exports){
+},{"global/document":39,"global/window":40}],44:[function(require,module,exports){
 'use strict';
 
 var range; // Create a range object for efficently rendering strings to elements.
@@ -13786,7 +13756,7 @@ var morphdom = morphdomFactory(morphAttrs);
 
 module.exports = morphdom;
 
-},{}],37:[function(require,module,exports){
+},{}],45:[function(require,module,exports){
 module.exports = [
   // attribute events (can be set with attributes)
   'onclick',
@@ -13824,7 +13794,35 @@ module.exports = [
   'onfocusout'
 ]
 
-},{}],38:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
+var yo = require('yo-yo');
+var translate = require('../translate');
+
+var el = yo`
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l3 center-align"><a href="#" data-activates="dropdown1" class="dropdown-button btn">${ translate.message('language') }</a>
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#" onclick=${ lang.bind(null, 'es') }>${ translate.message('spanish') }</a></li>
+          <li><a href="#" onclick=${ lang.bind(null, 'en-US') }>${ translate.message('english') }</a></li>
+          <li><a href="#" onclick=${ lang.bind(null, 'fr') }>${ translate.message('french') }</a></li>
+        </ul>
+      </div>
+      <div class="col s12 l3 push-l6 center-align">2016 - Trying Materialize</div>
+    </div>
+  </div>
+</footer>`;
+
+function lang(locale) {
+  localStorage.locale = locale;
+  location.reload();
+  return false;
+}
+
+document.body.appendChild(el);
+
+},{"../translate":60,"yo-yo":37}],47:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -13841,7 +13839,7 @@ page('/', function (ctx, next) {
     },
     cardtitle: 'Geisha Illustration',
     url: 'https://d13yacurqjgara.cloudfront.net/users/507883/screenshots/3297792/andy_hau_quinn_the_fox_quinnsquips_japan_dribbble.jpg',
-    likes: 450,
+    likes: 0,
     liked: false,
     createdAt: new Date()
   }, {
@@ -13851,7 +13849,7 @@ page('/', function (ctx, next) {
     },
     cardtitle: 'Latern Illustration',
     url: 'https://d13yacurqjgara.cloudfront.net/users/1315300/screenshots/3298040/lghths.jpg',
-    likes: 300,
+    likes: 1,
     liked: false,
     createdAt: new Date().setDate(new Date().getDate() - 10)
   }];
@@ -13859,7 +13857,7 @@ page('/', function (ctx, next) {
   empty(main).appendChild(template(pictures));
 });
 
-},{"./template":39,"empty-element":3,"page":25,"title":28}],39:[function(require,module,exports){
+},{"./template":48,"empty-element":3,"page":33,"title":36}],48:[function(require,module,exports){
 var yo = require('yo-yo');
 var layout = require('../layout');
 var picture = require('../picture-card');
@@ -13878,16 +13876,17 @@ module.exports = function (pictures) {
   return layout(el);
 };
 
-},{"../layout":42,"../picture-card":43,"yo-yo":29}],40:[function(require,module,exports){
+},{"../layout":51,"../picture-card":52,"yo-yo":37}],49:[function(require,module,exports){
 var page = require('page');
 
 require('./homepage');
 require('./signup');
 require('./signin');
+require('./footer');
 
 page();
 
-},{"./homepage":38,"./signin":44,"./signup":46,"page":25}],41:[function(require,module,exports){
+},{"./footer":46,"./homepage":47,"./signin":53,"./signup":55,"page":33}],50:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = function landing(box) {
@@ -13905,10 +13904,10 @@ module.exports = function landing(box) {
 </div>`;
 };
 
-},{"yo-yo":29}],42:[function(require,module,exports){
+},{"yo-yo":37}],51:[function(require,module,exports){
 var yo = require('yo-yo');
 
-module.exports = function layoout(content) {
+module.exports = function layout(content) {
   return yo`<div>
     <nav class="header">
       <div class="nav-wrapper">
@@ -13935,21 +13934,10 @@ module.exports = function layoout(content) {
   </div>`;
 };
 
-},{"yo-yo":29}],43:[function(require,module,exports){
+},{"yo-yo":37}],52:[function(require,module,exports){
 var yo = require('yo-yo');
 var moment = require('moment');
-
-if (!window.Intl) {
-  window.Intl = require('intl');
-}
-
-var IntlRelativeFormat = window.IntlRelativeFormat = require('intl-relativeformat');
-
-require('intl-relativeformat/dist/locale-data/en.js');
-require('intl-relativeformat/dist/locale-data/es.js');
-require('intl-relativeformat/dist/locale-data/fr.js');
-
-var rf = new IntlRelativeFormat('fr');
+var translate = require('../translate');
 
 module.exports = function pictureCard(pic) {
   var el;
@@ -13963,11 +13951,11 @@ module.exports = function pictureCard(pic) {
         <a href="/user/${ picture.user.username }" class="card-title">
           <img src="${ picture.user.avatar }" class="avatar"/>
         </a>
-        <small class="right time">${ rf.format(picture.createdAt) }</small>
+        <small class="right time">${ translate.date.format(picture.createdAt) }</small>
         <p>
           <a href="#" onclick=${ like.bind(null, true) }><i class="fa fa-heart-o" aria-hiddn="true"></i></a>
           <a href="#" onclick=${ like.bind(null, false) }><i class="fa fa-heart" aria-hiddn="true"></i></a>
-          <span class="left likes">${ picture.likes } Me gusta</span>
+          <span class="left likes">${ translate.message('likes', { likes: picture.likes }) }</span>
         </p>
       </div>
     </div>`;
@@ -13985,7 +13973,7 @@ module.exports = function pictureCard(pic) {
   return el;
 };
 
-},{"intl":22,"intl-relativeformat":7,"intl-relativeformat/dist/locale-data/en.js":4,"intl-relativeformat/dist/locale-data/es.js":5,"intl-relativeformat/dist/locale-data/fr.js":6,"moment":24,"yo-yo":29}],44:[function(require,module,exports){
+},{"../translate":60,"moment":32,"yo-yo":37}],53:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -13997,9 +13985,10 @@ page('/signin', function (ctx, next) {
   empty(main).appendChild(template);
 });
 
-},{"./template":45,"empty-element":3,"page":25,"title":28}],45:[function(require,module,exports){
+},{"./template":54,"empty-element":3,"page":33,"title":36}],54:[function(require,module,exports){
 var yo = require('yo-yo');
 var landing = require('../landing');
+var translate = require('../translate');
 
 var signinForm = yo`<div class="col s12 m7">
   <div class="row">
@@ -14007,16 +13996,16 @@ var signinForm = yo`<div class="col s12 m7">
       <h1 class="title">Instagram feed of friends</h1>
       <form class="signup-form">
         <div class="section">
-          <a class="btn btn-fb hide-on-small-only">Iniciar sesión con Facebook Option</a>
-          <a class="btn btn-fb hide-on-med-and-up">Iniciar sesión</a>
+          <a class="btn btn-fb hide-on-small-only">${ translate.message('signup.facebook') }</a>
+          <a class="btn btn-fb hide-on-med-and-up">${ translate.message('signin') }</a>
         </div>
         <div class="divider"></div>
         <div class="section">
-          <input type="email" name="email" placeholder="Correo electrónico" />
-          <input type="text" name="name" placeholder="Nombre completo" />
-          <input type="text" name="username" placeholder="Nombre de usuario" />
-          <input type="password" name="password" placeholder="Contraseña" />
-          <button class="btn waves-effect waves-light btn-signup" type="submit">Regístrate</button>
+          <input type="email" name="email" placeholder="${ translate.message('email') }" />
+          <input type="text" name="name" placeholder="${ translate.message('fullname') }" />
+          <input type="text" name="username" placeholder="${ translate.message('username') }" />
+          <input type="password" name="password" placeholder="${ translate.message('password') }" />
+          <button class="btn waves-effect waves-light btn-signup" type="submit">${ translate.message('signup.call-to-action') }</button>
         </div>
       </form>
     </div>
@@ -14031,7 +14020,7 @@ var signinForm = yo`<div class="col s12 m7">
 
 module.exports = landing(signinForm);
 
-},{"../landing":41,"yo-yo":29}],46:[function(require,module,exports){
+},{"../landing":50,"../translate":60,"yo-yo":37}],55:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -14043,9 +14032,10 @@ page('/signup', function (ctx, next) {
   empty(main).appendChild(template);
 });
 
-},{"./template":47,"empty-element":3,"page":25,"title":28}],47:[function(require,module,exports){
+},{"./template":56,"empty-element":3,"page":33,"title":36}],56:[function(require,module,exports){
 var yo = require('yo-yo');
 var landing = require('../landing');
+var translate = require('../translate');
 
 var signupForm = yo`<div class="col s12 m7">
   <div class="row">
@@ -14054,23 +14044,23 @@ var signupForm = yo`<div class="col s12 m7">
       <form class="signup-form">
         <h2>Fotos</h2>
         <div class="section">
-          <a class="btn btn-fb hide-on-small-only">Iniciar sesión con Facebook</a>
-          <a class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook-official" aria-hidden="true"></i>Iniciar sesión</a>
+          <a class="btn btn-fb hide-on-small-only">${ translate.message('signup.subheading') }</a>
+          <a class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook-official" aria-hidden="true"></i>${ translate.message('signup.text') }</a>
         </div>
         <div class="divider"></div>
         <div class="section">
-          <input type="email" name="email" placeholder="Correo electrónico" />
-          <input type="text" name="name" placeholder="Nombre completo" />
-          <input type="text" name="username" placeholder="Nombre de usuario" />
-          <input type="password" name="password" placeholder="Contraseña" />
-          <button class="btn waves-effect waves-light btn-signup" type="submit">Regístrate</button>
+          <input type="email" name="email" placeholder="${ translate.message('email') }" />
+          <input type="text" name="name" placeholder="${ translate.message('fullname') }" />
+          <input type="text" name="username" placeholder="${ translate.message('username') }" />
+          <input type="password" name="password" placeholder="${ translate.message('password') }" />
+          <button class="btn waves-effect waves-light btn-signup" type="submit">${ translate.message('signup.call-to-action') }</button>
         </div>
       </form>
     </div>
   </div>
   <div class="row">
     <div class="login-box">
-      ¿Tienes una cuenta? <a href="/signin">Entrar</a>
+      ${ translate.message('signup.have-account') } <a href="/signin">${ translate.message('signin') }</a>
     </div>
   </div>
 </div>
@@ -14078,4 +14068,99 @@ var signupForm = yo`<div class="col s12 m7">
 
 module.exports = landing(signupForm);
 
-},{"../landing":41,"yo-yo":29}]},{},[40]);
+},{"../landing":50,"../translate":60,"yo-yo":37}],57:[function(require,module,exports){
+module.exports = {
+          'likes': '{likes, plural, ' + '=0 { no likes }' + '=1 { # like }' + 'other { # likes}}',
+          'logout': 'Logout',
+          'english': 'English',
+          'spanish': 'Spanish',
+          'french': 'French',
+          'signup.subheading': 'Signup to see all the users feed',
+          'signup.facebook': 'Signup with Facebook',
+          'signup.text': 'Signup',
+          'email': 'E-mail',
+          'username': 'Username',
+          'fullname': 'Fullname',
+          'password': 'Password',
+          'signup.call-to-action': 'Signup',
+          'signup.have-account': 'Already have an account?',
+          'signin': 'Signin',
+          'signin.not-have-account': 'Don\'t have an accout?',
+          'language': 'Language'
+};
+
+},{}],58:[function(require,module,exports){
+module.exports = {
+  'likes': '{likes, number} me gusta',
+  'logout': 'Salir',
+  'english': 'Inglés',
+  'spanish': 'Español',
+  'french': 'Francés',
+  'signup.subheading': 'Regístrate para ver el feed de otros usuarios',
+  'signup.facebook': 'Iniciar sesión con Facebook',
+  'signup.text': 'Iniciar sesión',
+  'email': 'Correo eléctronico',
+  'username': 'Nombra de usuario',
+  'fullname': 'Nombre completo',
+  'password': 'Contraseña',
+  'signup.call-to-action': 'Regístrate',
+  'signup.have-account': '¿Tienes una cuenta?',
+  'signin': 'Entrar',
+  'signin.not-have-account': '¿No tienes una cuenta?',
+  'language': 'Idioma'
+};
+
+},{}],59:[function(require,module,exports){
+module.exports = {
+          'likes': '{Jaime, plural, ' + '=0 { aucun Jaime }' + '=1 { # Jaime }' + 'other { # Jaime}}',
+          'logout': 'Déconexion',
+          'english': 'Anglais',
+          'spanish': 'Espangol',
+          'french': 'Français',
+          'signup.subheading': 'S\'inscrire pour voir les feeds',
+          'signup.facebook': 'S\'inscrire avec Facebook',
+          'signup.text': 'S\'inscrire',
+          'email': 'Courrier électronique',
+          'username': 'Username',
+          'fullname': 'Nom complet',
+          'password': 'Mot de passe',
+          'signup.call-to-action': 'S\'inscrire',
+          'signup.have-account': 'Est-ce que vous avez un compte?',
+          'signin': 'Signin',
+          'signin.not-have-account': 'Est-ce que vous n\'avez pas une compte?',
+          'language': 'Langue'
+};
+
+},{}],60:[function(require,module,exports){
+if (!window.Intl) {
+  window.Intl = require('intl');
+}
+
+var IntlRelativeFormat = window.IntlRelativeFormat = require('intl-relativeformat');
+var IntlMessageFormat = require('intl-messageformat');
+
+require('intl-relativeformat/dist/locale-data/en.js');
+require('intl-relativeformat/dist/locale-data/es.js');
+require('intl-relativeformat/dist/locale-data/es.js');
+
+var es = require('./es');
+var fr = require('./fr');
+var en = require('./en-US');
+
+var MESSAGES = {};
+MESSAGES.es = es;
+MESSAGES['en-US'] = en;
+MESSAGES.fr = fr;
+
+var locale = localStorage.locale || 'es';
+
+module.exports = {
+  message: function (text, opts) {
+    opts = opts || {};
+    var msg = new IntlMessageFormat(MESSAGES[locale][text], locale, null);
+    return msg.format(opts);
+  },
+  date: new IntlRelativeFormat(locale)
+};
+
+},{"./en-US":57,"./es":58,"./fr":59,"intl":30,"intl-messageformat":4,"intl-relativeformat":15,"intl-relativeformat/dist/locale-data/en.js":13,"intl-relativeformat/dist/locale-data/es.js":14}]},{},[49]);
