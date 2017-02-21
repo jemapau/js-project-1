@@ -18,7 +18,7 @@ var el = yo`
 </footer>`;
 
 function lang(locale){
-  localStorage.locale = locale;
+  localStorage.setItem("locale", locale);
   location.reload();
   return false
 }

@@ -1,8 +1,8 @@
 module.exports = {
-  'likes': '{Jaime, plural, ' +
-            '=0 { aucun Jaime }' +
-            '=1 { # Jaime }' +
-            'other { # Jaime}}',
+  'likes': '{likes, plural, ' +
+            '=0 { aucun J\'aime }' +
+            '=1 { # J\'aime }' +
+            'other { # J\'aime}}',
   'logout': 'Déconexion',
   'english': 'Anglais',
   'spanish': 'Espangol',
