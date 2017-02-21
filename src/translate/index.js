@@ -7,12 +7,12 @@ var IntlMessageFormat = require('intl-messageformat');
 
 require('intl-relativeformat/dist/locale-data/en.js');
 require('intl-relativeformat/dist/locale-data/es.js');
-require('intl-relativeformat/dist/locale-data/es.js');
+require('intl-relativeformat/dist/locale-data/fr.js');
 
 
 var es = require('./es');
-var fr = require('./fr');
 var en = require('./en-US');
+var fr = require('./fr');
 
 var MESSAGES = {};
 MESSAGES.es = es;
