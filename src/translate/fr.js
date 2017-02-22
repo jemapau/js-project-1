@@ -19,4 +19,8 @@ module.exports = {
   'signin': 'Signin',
   'signin.not-have-account': 'Est-ce que vous n\'avez pas une compte?',
   'language': 'Langue',
+  'upload-picture': 'Charger Photo',
+  'upload': 'Charger',
+  'cancel': 'Cancel',
+  'policy': 'Site creé avec Materialize',
 }

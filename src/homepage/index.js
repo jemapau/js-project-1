@@ -2,35 +2,59 @@ var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
 var title = require('title');
+//var request = require('superagent');
+var header = require('../header');
+//var axios = =require('axios');
 
-page('/', function (ctx, next) {
+page('/', header, asyncLoad, function(ctx, next) {
   title('Instagram Feed');
   var main = document.getElementById('main-container');
 
-  var pictures = [
-    {
-      user: {
-        username: 'gaby.123',
-        avatar: 'https://uinames.com/api/photos/female/31.jpg'
-      },
-      cardtitle: 'Geisha Illustration',
-      url: 'https://d13yacurqjgara.cloudfront.net/users/507883/screenshots/3297792/andy_hau_quinn_the_fox_quinnsquips_japan_dribbble.jpg',
-      likes: 0,
-      liked: false,
-      createdAt: new Date()
-    },
-    {
-      user: {
-        username: 'carol.123',
-        avatar: 'https://uinames.com/api/photos/female/16.jpg'
-      },
-      cardtitle: 'Latern Illustration',
-      url: 'https://d13yacurqjgara.cloudfront.net/users/1315300/screenshots/3298040/lghths.jpg',
-      likes: 1,
-      liked: false,
-      createdAt: new Date().setDate(new Date().getDate() - 10)
-    },
-  ];
-
-  empty(main).appendChild(template(pictures));
+  empty(main).appendChild(template(ctx.pictures));
 })
+
+//function loadPictures(ctx, next) {
+//   request
+//     .get('/api/pictures')
+//     .end(function(err, res) {
+//       if (err) return console.log(err);
+//
+//       ctx.pictures = res.body;
+//       next();
+//     })
+// }
+
+// function loadPicturesAxios (ctx, next) {
+//   axios
+//     .get('/api/pictures')
+//     .then(function (res) {
+//       ctx.pictures[0] = res.data;
+//       next();
+//     })
+//     .catch(function (err) {
+//       console.log(err)
+//     })
+// }
+
+function loadPicturesFetch (ctx, next) {
+  fetch('/api/pictures')
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (pictures) {
+      ctx.pictures[0] = pictures;
+      next();
+    })
+    .catch(function (err) {
+      console.log(err)
+    })
+}
+
+async function asyncLoad(ctx, next) {
+  try {
+    ctx.pictures = await fetch('/api/pictures').then(res => res.json())
+    next()
+  } catch (err) {
+    return console.log(err);
+  }
+}

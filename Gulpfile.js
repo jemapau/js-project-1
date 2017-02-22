@@ -20,23 +20,24 @@ gulp.task('assets', function (){
 })
 
 function compile(watch) {
-  var bundle = watchify(browserify('./src/index.js'));
+  var bundle = (browserify('./src/index.js'));
+
+  if (watch) {
+    bundle = watchify(bundle);
+    bundle.on('update', function() {
+      console.log('--> Bundling...' + '🚀  💚  💜 ');
+      rebundle();
+    });
+  }
 
   function rebundle() {
     bundle
-      .transform(babel)
+      .transform(babel, {presets: ['es2015'], plugins: ['syntax-async-functions', 'transform-regenerator']})
       .bundle()
       .on('error', function(err) { console.log(err); this.emit('end') })
       .pipe(source('index.js'))
       .pipe(rename('app.js'))
       .pipe(gulp.dest('public'));
-  }
-
-  if (watch) {
-    bundle.on('update', function() {
-      console.log('--> Bundling...' + '🚀  💚  💜 ');
-      rebundle();
-    });
   }
 
   rebundle();

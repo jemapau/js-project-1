@@ -12,7 +12,7 @@ var el = yo`
           <li><a href="#" onclick=${lang.bind(null, 'fr')}>${translate.message('french')}</a></li>
         </ul>
       </div>
-      <div class="col s12 l3 push-l6 center-align">2016 - Trying Materialize</div>
+      <div class="col s12 l3 push-l6 center-align">2017 - ${translate.message('policy')} - 💓</div>
     </div>
   </div>
 </footer>`;
