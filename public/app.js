@@ -22600,16 +22600,16 @@ module.exports = [
 },{}],351:[function(require,module,exports){
 'use strict';
 
-var _templateObject = _taggedTemplateLiteral(['\n<footer class="site-footer">\n  <div class="container">\n    <div class="row">\n      <div class="col s12 l3 center-align"><a href="#" data-activates="dropdown1" class="dropdown-button btn">', '</a>\n        <ul id="dropdown1" class="dropdown-content">\n          <li><a href="#" onclick=', '>', '</a></li>\n          <li><a href="#" onclick=', '>', '</a></li>\n          <li><a href="#" onclick=', '>', '</a></li>\n        </ul>\n      </div>\n      <div class="col s12 l3 push-l6 center-align">2017 - ', '</div>\n    </div>\n  </div>\n</footer>'], ['\n<footer class="site-footer">\n  <div class="container">\n    <div class="row">\n      <div class="col s12 l3 center-align"><a href="#" data-activates="dropdown1" class="dropdown-button btn">', '</a>\n        <ul id="dropdown1" class="dropdown-content">\n          <li><a href="#" onclick=', '>', '</a></li>\n          <li><a href="#" onclick=', '>', '</a></li>\n          <li><a href="#" onclick=', '>', '</a></li>\n        </ul>\n      </div>\n      <div class="col s12 l3 push-l6 center-align">2017 - ', '</div>\n    </div>\n  </div>\n</footer>']);
+var _templateObject = _taggedTemplateLiteral(['\n<footer class="site-footer">\n  <div class="container">\n    <div class="row">\n      <div class="col s12 l12 center-align"><a href="#" data-activates="dropdown1" class="dropdown-button btn">', '</a>\n        <ul id="dropdown1" class="dropdown-content">\n          <li><a href="#" onclick=', '>', '</a></li>\n          <li><a href="#" onclick=', '>', '</a></li>\n          <li><a href="#" onclick=', '>', '</a></li>\n        </ul>\n      </div>\n    </div>\n    <div class="row">\n      <div class="col s12 l12 center-align">2017 - ', ' - <i class="fa fa-heart" aria-hidden="true"></i></div>\n    </div>\n  </div>\n</footer>'], ['\n<footer class="site-footer">\n  <div class="container">\n    <div class="row">\n      <div class="col s12 l12 center-align"><a href="#" data-activates="dropdown1" class="dropdown-button btn">', '</a>\n        <ul id="dropdown1" class="dropdown-content">\n          <li><a href="#" onclick=', '>', '</a></li>\n          <li><a href="#" onclick=', '>', '</a></li>\n          <li><a href="#" onclick=', '>', '</a></li>\n        </ul>\n      </div>\n    </div>\n    <div class="row">\n      <div class="col s12 l12 center-align">2017 - ', ' - <i class="fa fa-heart" aria-hidden="true"></i></div>\n    </div>\n  </div>\n</footer>']);
 
 function _taggedTemplateLiteral(strings, raw) {
   return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
 }
 
 var yo = require('yo-yo');
-var translate = require('../translate');
+var translate = require('../translate').message;
 
-var el = yo(_templateObject, translate.message('language'), lang.bind(null, 'es'), translate.message('spanish'), lang.bind(null, 'en-US'), translate.message('english'), lang.bind(null, 'fr'), translate.message('french'), translate.message('policy'));
+var el = yo(_templateObject, translate('language'), lang.bind(null, 'es'), translate('spanish'), lang.bind(null, 'en-US'), translate('english'), lang.bind(null, 'fr'), translate('french'), translate('policy'));
 
 function lang(locale) {
   localStorage.setItem("locale", locale);
@@ -22726,7 +22726,7 @@ function asyncLoad(ctx, next) {
 },{"../header":352,"./template":354,"empty-element":299,"page":330,"title":341}],354:[function(require,module,exports){
 'use strict';
 
-var _templateObject = _taggedTemplateLiteral(['<div class="container timeline">\n      <div class="row">\n        <div class="col s12 m10 offset-m1 l8 offset-12 center-align">\n          <form enctype="multipart/form-data" class="form-upload" id="formUpload" onsubmit=', '>\n            <div id="fileName" class="fileUpload btn btn-flat cyan">\n              <span><i class="fa fa-picture-o" aria-hidden="true"></i>', '</span>\n              <input name="picture" id="file" type="file" class="upload" onchange=', ' />\n            </div>\n            <button id="btnUpload" class="btn btn-flat cyan hide">', '</button>\n            <button id="btnCancel" class="btn btn-flat red hide" onclick=', '>', '</button>\n          </form>\n        </div>\n        <div class="col s12 m10 offset-m1 l6 offset-l3">\n          ', '\n        </div>\n      </div>\n    </div>'], ['<div class="container timeline">\n      <div class="row">\n        <div class="col s12 m10 offset-m1 l8 offset-12 center-align">\n          <form enctype="multipart/form-data" class="form-upload" id="formUpload" onsubmit=', '>\n            <div id="fileName" class="fileUpload btn btn-flat cyan">\n              <span><i class="fa fa-picture-o" aria-hidden="true"></i>', '</span>\n              <input name="picture" id="file" type="file" class="upload" onchange=', ' />\n            </div>\n            <button id="btnUpload" class="btn btn-flat cyan hide">', '</button>\n            <button id="btnCancel" class="btn btn-flat red hide" onclick=', '>', '</button>\n          </form>\n        </div>\n        <div class="col s12 m10 offset-m1 l6 offset-l3">\n          ', '\n        </div>\n      </div>\n    </div>']);
+var _templateObject = _taggedTemplateLiteral(['<div class="container timeline">\n      <div class="row">\n        <div class="col s12 m10 offset-m1 l12 offset-12 center-align">\n          <form enctype="multipart/form-data" class="form-upload" id="formUpload" onsubmit=', '>\n            <div id="fileName" class="fileUpload btn waves-effect waves-light cyan center-align">\n              <span><i class="fa fa-picture-o" aria-hidden="true"></i>', '</span>\n              <input name="picture" id="file" type="file" class="upload" onchange=', ' />\n            </div>\n            <button id="btnUpload" class="btn btn-flat cyan hide">', '</button>\n            <button id="btnCancel" class="btn btn-flat red hide" onclick=', '>', '</button>\n          </form>\n        </div>\n        <div class="col s12 m10 offset-m1 l6 offset-l3">\n          ', '\n        </div>\n      </div>\n    </div>'], ['<div class="container timeline">\n      <div class="row">\n        <div class="col s12 m10 offset-m1 l12 offset-12 center-align">\n          <form enctype="multipart/form-data" class="form-upload" id="formUpload" onsubmit=', '>\n            <div id="fileName" class="fileUpload btn waves-effect waves-light cyan center-align">\n              <span><i class="fa fa-picture-o" aria-hidden="true"></i>', '</span>\n              <input name="picture" id="file" type="file" class="upload" onchange=', ' />\n            </div>\n            <button id="btnUpload" class="btn btn-flat cyan hide">', '</button>\n            <button id="btnCancel" class="btn btn-flat red hide" onclick=', '>', '</button>\n          </form>\n        </div>\n        <div class="col s12 m10 offset-m1 l6 offset-l3">\n          ', '\n        </div>\n      </div>\n    </div>']);
 
 function _taggedTemplateLiteral(strings, raw) {
   return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
@@ -22805,7 +22805,7 @@ module.exports = function landing(box) {
 },{"../landing":356,"yo-yo":342}],357:[function(require,module,exports){
 'use strict';
 
-var _templateObject = _taggedTemplateLiteral(['<div class="content">\n    ', '\n    </div>'], ['<div class="content">\n    ', '\n    </div>']);
+var _templateObject = _taggedTemplateLiteral(['<div class="contentainer">\n    ', '\n    </div>'], ['<div class="contentainer">\n    ', '\n    </div>']);
 
 function _taggedTemplateLiteral(strings, raw) {
   return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
@@ -22960,7 +22960,8 @@ module.exports = {
   'language': 'Idioma',
   'upload-picture': 'Subir Foto',
   'upload': 'Subir',
-  'cancel': 'Cancelar'
+  'cancel': 'Cancelar',
+  'policy': 'Sitio creado con Materialize'
 };
 
 },{}],365:[function(require,module,exports){

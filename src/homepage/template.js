@@ -7,9 +7,9 @@ var request = require('superagent');
 module.exports = function(pictures) {
     var el = yo`<div class="container timeline">
       <div class="row">
-        <div class="col s12 m10 offset-m1 l8 offset-12 center-align">
+        <div class="col s12 m10 offset-m1 l12 offset-12 center-align">
           <form enctype="multipart/form-data" class="form-upload" id="formUpload" onsubmit=${onsubmit}>
-            <div id="fileName" class="fileUpload btn btn-flat cyan">
+            <div id="fileName" class="fileUpload btn waves-effect waves-light cyan center-align">
               <span><i class="fa fa-picture-o" aria-hidden="true"></i>${translate('upload-picture')}</span>
               <input name="picture" id="file" type="file" class="upload" onchange=${onchange} />
             </div>
