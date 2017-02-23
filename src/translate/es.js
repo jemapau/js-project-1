@@ -19,4 +19,5 @@ module.exports = {
   'upload-picture': 'Subir Foto',
   'upload': 'Subir',
   'cancel': 'Cancelar',
+  'policy': 'Sitio creado con Materialize',
 }
