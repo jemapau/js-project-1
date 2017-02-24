@@ -1,6 +1,6 @@
 # Instagram's feed
 
-This is a mockup project for practice and learning made with Gulp.
+This is a mockup project for practice and learn.
 
 To run this project:
 
@@ -8,47 +8,46 @@ Make sure you have Gulp install on your system, and run this command in your pro
 
 ```
 npm install --save-dev gulp
-
 ```
 
-# Install devDependecies
+# Install Dependecies
 
-*Gulp*
+Gulp
 
-*Gulp Rename*
+Gulp Rename
 
-*Gulp Sass*
+Gulp Sass
 
-*Materialize CSS*
+Materialize CSS
 
-*Babel Dependecies*
+Babel Dependecies
 
-*Browserify*
+Browserify
 
-*Watchify*
+Watchify
 
-*Vinyl Source Stream*
+Vinyl Source Stream
 
-*Express*
+Express
 
-*yo-yo*
+yo-yo
 
-*Pug*
+Pug
 
-*Page*
+Page
 
-*title*
+title
 
-*Multer*
+Multer
 
-*Empty element*
+Empty element
 
-*Superagent*
+Superagent
 
-*Intl*
+Intl
 
-*Intl Message Format*
+Intl Message Format
 
-*Intl Relative Format*
+Intl Relative Format
 
-*File extension*
+File extension
