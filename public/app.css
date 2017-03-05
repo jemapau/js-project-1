@@ -127,3 +127,6 @@ nav .brand-logo {
     cursor: pointer;
     opacity: 0;
     filter: alpha(opacity=0); }
+
+.preloader-background {
+  display: none; }
