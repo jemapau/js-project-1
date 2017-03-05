@@ -31,6 +31,10 @@ app.get('/signin', function (req, res) {
   res.render('index' , { title: 'Instagram Feed - Sign In'});
 })
 
+app.get('/user', function (req, res) {
+  res.render('index' , { title: 'User Profile'});
+})
+
 app.get('/api/pictures', function (req, res){
   var pictures = [
     {
