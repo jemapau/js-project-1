@@ -7,28 +7,13 @@ module.exports = function pictureCard(pic){
   function render(picture) {
     return yo`
     <div class="card ${picture.liked ? 'liked' : ''}">
-      <div class="preloader-background">
-        <div class="preloader-wrapper small active">
-          <div class="spinner-layer spinner-green">
-            <div class="circle-clipper left">
-              <div class="circle"></div>
-            </div>
-            <div class="gap-patch">
-              <div class="circle"></div>
-            </div>
-            <div class="circle-clipper right">
-              <div class="circle"></div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="${picture.url}">
       </div>
       <div class="card-content">
-        <span class="card-title activator">${picture.user.username}</span>
-        <a href="/user/${picture.user.username}" class="card-title">
+        <a href="/${picture.user.username}" class="card-title">
           <img src="${picture.user.avatar}" class="avatar"/>
+          <span class="card-title activator">${picture.user.username}</span>
         </a>
         <small class="right time">${translate.date.format(picture.createdAt)}</small>
         <p>

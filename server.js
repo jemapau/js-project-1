@@ -31,10 +31,6 @@ app.get('/signin', function (req, res) {
   res.render('index' , { title: 'Instagram Feed - Sign In'});
 })
 
-app.get('/user', function (req, res) {
-  res.render('index' , { title: 'User Profile'});
-})
-
 app.get('/api/pictures', function (req, res){
   var pictures = [
     {
@@ -61,9 +57,8 @@ app.get('/api/pictures', function (req, res){
     },
   ];
 
-  setTimeout(function () {
-    res.send(pictures);
-  }, 2000)
+  res.send(pictures);
+
 });
 
 app.post('/api/pictures', function (req, res) {
@@ -71,8 +66,54 @@ app.post('/api/pictures', function (req, res) {
     if (err) {
       return res.send(500, "Error uploading file :(");
     }
-    res.send('File uploaded 😄');
+    res.send('File uploaded');
   })
+})
+
+app.get('/api/user/:username', function (req, res) {
+  //This info is use while there is no database
+  const user = {
+    username: 'gaby.123',
+    avatar: 'https://uinames.com/api/photos/female/31.jpg',
+    pictures: [
+      {
+        id: 1,
+        src: 'https://d13yacurqjgara.cloudfront.net/users/6033/screenshots/3341770/drbl_1x.jpg',
+        likes: 2
+      },
+      {
+        id: 2,
+        src: 'https://d13yacurqjgara.cloudfront.net/users/288987/screenshots/3342177/fox-tale_1x.jpg',
+        likes: 8
+      },
+      {
+        id: 3,
+        src: 'https://d13yacurqjgara.cloudfront.net/users/413551/screenshots/3318470/woman.jpg',
+        likes: 15
+      },
+      {
+        id: 4,
+        src: 'https://d13yacurqjgara.cloudfront.net/users/35381/screenshots/3137574/bike.png',
+        likes: 24
+      },
+      {
+        id: 5,
+        src: 'https://d13yacurqjgara.cloudfront.net/users/35381/screenshots/3055670/bear.png',
+        likes: 1
+      },
+      {
+        id: 6,
+        src: 'https://d13yacurqjgara.cloudfront.net/users/35381/screenshots/2976836/bear.png',
+        likes: 5
+      }
+    ]
+  }
+ res.send(user)
+})
+
+
+app.get('/:username', function (req, res){
+  res.render('index', {title: `Instagram feed - ${req.params.username}`});
 })
 
 app.listen(3000, function (err) {

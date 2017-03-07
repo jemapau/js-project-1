@@ -129,4 +129,12 @@ nav .brand-logo {
     filter: alpha(opacity=0); }
 
 .preloader-background {
-  display: none; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0; }
