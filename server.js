@@ -57,8 +57,9 @@ app.get('/api/pictures', function (req, res){
     },
   ];
 
-  res.send(pictures);
-
+  setTimeout(function () {
+    res.send(pictures);
+  }, 2000)
 });
 
 app.post('/api/pictures', function (req, res) {
@@ -66,54 +67,53 @@ app.post('/api/pictures', function (req, res) {
     if (err) {
       return res.send(500, "Error uploading file :(");
     }
-    res.send('File uploaded');
+    res.send('File uploaded 😄');
   })
 })
 
-app.get('/api/user/:username', function (req, res) {
-  //This info is use while there is no database
+app.get('/api/user/:username', (req, res) => {
   const user = {
     username: 'gaby.123',
     avatar: 'https://uinames.com/api/photos/female/31.jpg',
     pictures: [
       {
         id: 1,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/6033/screenshots/3341770/drbl_1x.jpg',
-        likes: 2
+        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        likes: 3,
       },
       {
         id: 2,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/288987/screenshots/3342177/fox-tale_1x.jpg',
-        likes: 8
+        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        likes: 4,
       },
       {
         id: 3,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/413551/screenshots/3318470/woman.jpg',
-        likes: 15
+        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        likes: 8,
       },
       {
         id: 4,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/35381/screenshots/3137574/bike.png',
-        likes: 24
+        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        likes: 15,
       },
       {
         id: 5,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/35381/screenshots/3055670/bear.png',
-        likes: 1
+        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        likes: 35,
       },
       {
         id: 6,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/35381/screenshots/2976836/bear.png',
-        likes: 5
-      }
+        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        likes: 4,
+      },
     ]
   }
- res.send(user)
+
+  res.send(user);
 })
 
-
-app.get('/:username', function (req, res){
-  res.render('index', {title: `Instagram feed - ${req.params.username}`});
+app.get('/:username', function (req, res) {
+  res.render('index', {title: `Instagram feeds - ${req.params.username}`})
 })
 
 app.listen(3000, function (err) {

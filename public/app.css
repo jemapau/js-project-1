@@ -128,13 +128,63 @@ nav .brand-logo {
     opacity: 0;
     filter: alpha(opacity=0); }
 
-.preloader-background {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 100;
-  top: 20px;
-  left: 0;
-  right: 0;
-  bottom: 0; }
+.user-page {
+  margin-top: 30px; }
+  .user-page .heading {
+    margin-bottom: 20px; }
+  .user-page .picture-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-bottom: 20px;
+    position: relative; }
+    .user-page .picture-container:hover .picture {
+      opacity: 0.8; }
+    .user-page .picture-container:hover .likes {
+      display: flex; }
+    .user-page .picture-container .picture {
+      margin-bottom: 20px;
+      display: block;
+      max-width: 100%;
+      max-height: 100%; }
+    .user-page .picture-container .likes {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      color: #f44336;
+      font-size: 34px;
+      display: none; }
+    .user-page .picture-container .fa-heart {
+      margin-right: 8px;
+      display: inline-block; }
+
+.modal img {
+  max-height: 100%;
+  max-width: 90%; }
+
+.modal .fa-heart {
+  display: inline-block; }
+
+.like-heart {
+  font-size: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: all .1s ease;
+  opacity: 0; }
+
+.like-heart.liked {
+  color: #f44336;
+  font-size: 12em;
+  display: block;
+  transition: all .5s ease;
+  opacity: 1; }
