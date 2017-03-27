@@ -18268,7 +18268,7 @@ document.body.appendChild(el);
 },{"../translate":356,"yo-yo":339}],342:[function(require,module,exports){
 'use strict';
 
-var _templateObject = _taggedTemplateLiteral(['<nav class="header">\n  <div class="nav-wrapper">\n    <div class="container">\n      <div class="row">\n        <div class="col s12 m6 offset-m1">\n          <a href="/" class="brand-logo title">Instagram feed</a>\n        </div>\n        <div class="col s2 m6 push-s10 push-m10">\n          <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n            <i class="fa fa-user-circle-o" aria-hidden="true"></i>\n          </a>\n          <ul id="drop-user" class="dropdown-content">\n            <li><a href="#">Salir</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</nav>'], ['<nav class="header">\n  <div class="nav-wrapper">\n    <div class="container">\n      <div class="row">\n        <div class="col s12 m6 offset-m1">\n          <a href="/" class="brand-logo title">Instagram feed</a>\n        </div>\n        <div class="col s2 m6 push-s10 push-m10">\n          <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n            <i class="fa fa-user-circle-o" aria-hidden="true"></i>\n          </a>\n          <ul id="drop-user" class="dropdown-content">\n            <li><a href="#">Salir</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</nav>']);
+var _templateObject = _taggedTemplateLiteral(['<nav class="header">\n  <div class="nav-wrapper">\n    <div class="container">\n      <div class="row">\n        <div class="col s12 m6 offset-m1">\n          <a href="/" class="brand-logo title">Instagram feed</a>\n        </div>\n        <div class="col s2 m6 push-s8 push-m8">\n          <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n            <i class="fa fa-user-circle-o" aria-hidden="true"></i>\n          </a>\n          <ul id="drop-user" class="dropdown-content">\n            <li><a href="#">Salir</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</nav>'], ['<nav class="header">\n  <div class="nav-wrapper">\n    <div class="container">\n      <div class="row">\n        <div class="col s12 m6 offset-m1">\n          <a href="/" class="brand-logo title">Instagram feed</a>\n        </div>\n        <div class="col s2 m6 push-s8 push-m8">\n          <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n            <i class="fa fa-user-circle-o" aria-hidden="true"></i>\n          </a>\n          <ul id="drop-user" class="dropdown-content">\n            <li><a href="#">Salir</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</nav>']);
 
 function _taggedTemplateLiteral(strings, raw) {
   return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
@@ -18293,7 +18293,7 @@ var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
 var title = require('title');
-//var request = require('superagent');
+var request = require('superagent');
 var header = require('../header');
 //var axios = =require('axios');
 
@@ -18369,7 +18369,7 @@ function asyncLoad(ctx, next) {
   }, null, this, [[0, 7]]);
 }
 
-},{"../header":342,"./template":344,"empty-element":299,"page":327,"title":338}],344:[function(require,module,exports){
+},{"../header":342,"./template":344,"empty-element":299,"page":327,"superagent":331,"title":338}],344:[function(require,module,exports){
 'use strict';
 
 var _templateObject = _taggedTemplateLiteral(['<div class="container timeline">\n      <div class="row">\n        <div class="col s12 m10 offset-m1 l12 offset-12 center-align">\n          <form enctype="multipart/form-data" class="form-upload" id="formUpload" onsubmit=', '>\n            <div id="fileName" class="fileUpload btn waves-effect waves-light cyan center-align">\n              <span><i class="fa fa-picture-o" aria-hidden="true"></i>', '</span>\n              <input name="picture" id="file" type="file" class="upload" onchange=', ' />\n            </div>\n            <button id="btnUpload" class="btn btn-flat cyan hide">', '</button>\n            <button id="btnCancel" class="btn btn-flat red hide" onclick=', '>', '</button>\n          </form>\n        </div>\n        <div class="col s12 m10 offset-m1 l6 offset-l3">\n          ', '\n        </div>\n      </div>\n    </div>'], ['<div class="container timeline">\n      <div class="row">\n        <div class="col s12 m10 offset-m1 l12 offset-12 center-align">\n          <form enctype="multipart/form-data" class="form-upload" id="formUpload" onsubmit=', '>\n            <div id="fileName" class="fileUpload btn waves-effect waves-light cyan center-align">\n              <span><i class="fa fa-picture-o" aria-hidden="true"></i>', '</span>\n              <input name="picture" id="file" type="file" class="upload" onchange=', ' />\n            </div>\n            <button id="btnUpload" class="btn btn-flat cyan hide">', '</button>\n            <button id="btnCancel" class="btn btn-flat red hide" onclick=', '>', '</button>\n          </form>\n        </div>\n        <div class="col s12 m10 offset-m1 l6 offset-l3">\n          ', '\n        </div>\n      </div>\n    </div>']);
@@ -18676,14 +18676,33 @@ module.exports = {
 
 var page = require('page');
 var template = require('./template');
-var header = require('../header');
 var title = require('title');
 var empty = require('empty-element');
+var header = require('../header');
 
 page('/:username', header, loadUser, function (ctx, next) {
   var main = document.getElementById('main-container');
   title('Instagram feed - ' + ctx.params.username);
   empty(main).appendChild(template(ctx.user));
+  $('modal-trigger').leanModal();
+});
+
+page('/:username/:id', header, loadUser, function (ctx, next) {
+  var main = document.getElementById('main-container');
+  title('Instagram feed - ' + ctx.params.username);
+  empty(main).appendChild(template(ctx.user));
+  $('#modal' + ctx.params.id).openModal({
+    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+    opacity: .5, // Opacity of modal background
+    inDuration: 300, // Transition in duration
+    outDuration: 200, // Transition out duration
+    startingTop: '4%', // Starting top style attribute
+    endingTop: '10%', // Ending top style attribute
+    complete: function complete() {
+      var path = '/' + ctx.params.username;
+      page(path);
+    }
+  });
 });
 
 function loadUser(ctx, next) {
@@ -18722,7 +18741,7 @@ function loadUser(ctx, next) {
 'use strict';
 
 var _templateObject = _taggedTemplateLiteral(['<div class="container user-page">\n    <div class="row">\n      <div class="col s12 m10 offset-m1 l8 offset-l2 center-align">\n        <div class="row">\n          <div class="col s12 m10 offset-m1 l3 offset-l3 center">\n            <img src="', '" class="responsive-img circle"/>\n          </div>\n          <div class="col s12 m10 offset-m1 l6 left-align">\n            <h2 class="hide-on-large-only center-align">', '</h2>\n            <h2 class="hide-on-med and-down left-align">', '</h2>\n          </div>\n        </div>\n      </div>\n      <div class="row">\n        ', '\n      </div>\n    </div>\n  </div>'], ['<div class="container user-page">\n    <div class="row">\n      <div class="col s12 m10 offset-m1 l8 offset-l2 center-align">\n        <div class="row">\n          <div class="col s12 m10 offset-m1 l3 offset-l3 center">\n            <img src="', '" class="responsive-img circle"/>\n          </div>\n          <div class="col s12 m10 offset-m1 l6 left-align">\n            <h2 class="hide-on-large-only center-align">', '</h2>\n            <h2 class="hide-on-med and-down left-align">', '</h2>\n          </div>\n        </div>\n      </div>\n      <div class="row">\n        ', '\n      </div>\n    </div>\n  </div>']),
-    _templateObject2 = _taggedTemplateLiteral(['<div class="col s12 m6 l4">\n            <a href="/', '/', '" class="picture-container">\n              <img src="', '" class="picture" />\n              <div class="likes"><i class="fa fa-heart"></i> ', '</div>\n            </a>\n            <div id="modal', '" class="modal modal-fixed-footer">\n              <div class="modal-content center">\n                <img src="', '" />\n              </div>\n              <div class="modal-footer">\n                <div class="btn btn-flat likes"><i class="fa fa-heart"></i> ', '</div>\n              </div>\n            </div>\n          </div>'], ['<div class="col s12 m6 l4">\n            <a href="/', '/', '" class="picture-container">\n              <img src="', '" class="picture" />\n              <div class="likes"><i class="fa fa-heart"></i> ', '</div>\n            </a>\n            <div id="modal', '" class="modal modal-fixed-footer">\n              <div class="modal-content center">\n                <img src="', '" />\n              </div>\n              <div class="modal-footer">\n                <div class="btn btn-flat likes"><i class="fa fa-heart"></i> ', '</div>\n              </div>\n            </div>\n          </div>']);
+    _templateObject2 = _taggedTemplateLiteral(['<div class="col s12 m6 l4">\n            <a href="/', '/', '" class="modal-trigger picture-container">\n              <img src="', '" class="picture" />\n              <div class="likes"><i class="fa fa-heart"></i> ', '</div>\n            </a>\n            <div id="modal', '" class="modal modal-fixed-footer">\n              <div class="modal-content center">\n                <img src="', '" />\n              </div>\n              <div class="modal-footer">\n                <img src="', '" class="responsive-img circle"/>\n                <div class="btn modal-close"><i class="fa fa-times" aria-hidden="true"></i><span>Close</span></div>\n                <div class="btn btn-flat likes"><i class="fa fa-heart"></i> ', '</div>\n              </div>\n            </div>\n          </div>'], ['<div class="col s12 m6 l4">\n            <a href="/', '/', '" class="modal-trigger picture-container">\n              <img src="', '" class="picture" />\n              <div class="likes"><i class="fa fa-heart"></i> ', '</div>\n            </a>\n            <div id="modal', '" class="modal modal-fixed-footer">\n              <div class="modal-content center">\n                <img src="', '" />\n              </div>\n              <div class="modal-footer">\n                <img src="', '" class="responsive-img circle"/>\n                <div class="btn modal-close"><i class="fa fa-times" aria-hidden="true"></i><span>Close</span></div>\n                <div class="btn btn-flat likes"><i class="fa fa-heart"></i> ', '</div>\n              </div>\n            </div>\n          </div>']);
 
 function _taggedTemplateLiteral(strings, raw) {
   return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
@@ -18734,7 +18753,7 @@ var translate = require('../translate').message;
 
 module.exports = function (user) {
   var el = yo(_templateObject, user.avatar, user.username, user.username, user.pictures.map(function (picture) {
-    return yo(_templateObject2, user.username, picture.id, picture.src, picture.likes, picture.id, picture.src, translate('likes', { likes: picture.likes }));
+    return yo(_templateObject2, user.username, picture.id, picture.src, picture.likes, picture.id, picture.src, user.avatar, translate('likes', { likes: picture.likes }));
   }));
 
   return layout(el);

@@ -83,27 +83,27 @@ app.get('/api/user/:username', (req, res) => {
       },
       {
         id: 2,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        src: 'https://d13yacurqjgara.cloudfront.net/users/1642524/screenshots/3392782/you_re_monster_enough_2-01.png',
         likes: 4,
       },
       {
         id: 3,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        src: 'https://d13yacurqjgara.cloudfront.net/users/3554/screenshots/2579452/icons.png',
         likes: 8,
       },
       {
         id: 4,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        src: 'https://d13yacurqjgara.cloudfront.net/users/77553/screenshots/2369834/screen_shot_2015-11-24_at_13.21.53.png',
         likes: 15,
       },
       {
         id: 5,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        src: 'https://d13yacurqjgara.cloudfront.net/users/730703/screenshots/2501744/play-europa-citys-magazine-2.jpg',
         likes: 35,
       },
       {
         id: 6,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        src: 'https://d13yacurqjgara.cloudfront.net/users/897821/screenshots/2761023/50-personalidad-historica.png',
         likes: 4,
       },
     ]
@@ -113,6 +113,10 @@ app.get('/api/user/:username', (req, res) => {
 })
 
 app.get('/:username', function (req, res) {
+  res.render('index', {title: `Instagram feeds - ${req.params.username}`})
+})
+
+app.get('/:username/:id', function (req, res) {
   res.render('index', {title: `Instagram feeds - ${req.params.username}`})
 })
 

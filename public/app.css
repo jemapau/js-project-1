@@ -128,27 +128,28 @@ nav .brand-logo {
     opacity: 0;
     filter: alpha(opacity=0); }
 
-.user-page {
-  margin-top: 30px; }
-  .user-page .heading {
+.container.user-page {
+  margin-top: 30px !important; }
+  .container.user-page .heading {
     margin-bottom: 20px; }
-  .user-page .picture-container {
+  .container.user-page .picture-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 400px;
     margin-bottom: 20px;
     position: relative; }
-    .user-page .picture-container:hover .picture {
-      opacity: 0.8; }
-    .user-page .picture-container:hover .likes {
+    .container.user-page .picture-container:hover .picture {
+      opacity: 0.8;
+      background: black; }
+    .container.user-page .picture-container:hover .likes {
       display: flex; }
-    .user-page .picture-container .picture {
+    .container.user-page .picture-container .picture {
       margin-bottom: 20px;
       display: block;
       max-width: 100%;
       max-height: 100%; }
-    .user-page .picture-container .likes {
+    .container.user-page .picture-container .likes {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -161,7 +162,7 @@ nav .brand-logo {
       color: #f44336;
       font-size: 34px;
       display: none; }
-    .user-page .picture-container .fa-heart {
+    .container.user-page .picture-container .fa-heart {
       margin-right: 8px;
       display: inline-block; }
 

@@ -18,9 +18,9 @@ module.exports = function(user) {
         </div>
       </div>
       <div class="row">
-        ${user.pictures.map(function (picture) {
+        ${user.pictures.map(function(picture) {
           return yo`<div class="col s12 m6 l4">
-            <a href="/${user.username}/${picture.id}" class="picture-container">
+            <a href="/${user.username}/${picture.id}" class="modal-trigger picture-container">
               <img src="${picture.src}" class="picture" />
               <div class="likes"><i class="fa fa-heart"></i> ${picture.likes}</div>
             </a>
@@ -29,6 +29,8 @@ module.exports = function(user) {
                 <img src="${picture.src}" />
               </div>
               <div class="modal-footer">
+                <img src="${user.avatar}" class="responsive-img circle"/>
+                <div class="btn modal-close"><i class="fa fa-times" aria-hidden="true"></i><span>Close</span></div>
                 <div class="btn btn-flat likes"><i class="fa fa-heart"></i> ${translate('likes', { likes: picture.likes })}</div>
               </div>
             </div>
