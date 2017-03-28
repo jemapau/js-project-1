@@ -4,50 +4,18 @@ This is a mockup project for practice and learn.
 
 To run this project:
 
-Make sure you have Gulp install on your system, and run this command in your project directory:
+Make sure you have Gulp install on your system.
+
+Install all dependencies
 
 ```
-npm install --save-dev gulp
+npm install
+
 ```
 
-# Install Dependecies
+Type the following command to run the project.
 
-Gulp
+```
+npm start
 
-Gulp Rename
-
-Gulp Sass
-
-Materialize CSS
-
-Babel Dependecies
-
-Browserify
-
-Watchify
-
-Vinyl Source Stream
-
-Express
-
-yo-yo
-
-Pug
-
-Page
-
-title
-
-Multer
-
-Empty element
-
-Superagent
-
-Intl
-
-Intl Message Format
-
-Intl Relative Format
-
-File extension
+```
