@@ -18467,7 +18467,7 @@ module.exports = function layout(content) {
 },{"yo-yo":339}],348:[function(require,module,exports){
 'use strict';
 
-var _templateObject = _taggedTemplateLiteral(['<div class="card ', '">\n      <div class="card-image waves-effect waves-block waves-light">\n        <img class="activator" src="', '">\n      </div>\n      <div class="card-content">\n        <a href="/', '" class="card-title">\n          <img src="', '" class="avatar"/>\n          <span class="card-title">', '</span>\n        </a>\n        <small class="right time">', '</small>\n        <p>\n          <a href="#" onclick=', '><i class="fa fa-heart-o" aria-hiddn="true"></i></a>\n          <a href="#" onclick=', '><i class="fa fa-heart" aria-hiddn="true"></i></a>\n          <span class="left likes">', '</span>\n        </p>\n      </div>\n    </div>'], ['<div class="card ', '">\n      <div class="card-image waves-effect waves-block waves-light">\n        <img class="activator" src="', '">\n      </div>\n      <div class="card-content">\n        <a href="/', '" class="card-title">\n          <img src="', '" class="avatar"/>\n          <span class="card-title">', '</span>\n        </a>\n        <small class="right time">', '</small>\n        <p>\n          <a href="#" onclick=', '><i class="fa fa-heart-o" aria-hiddn="true"></i></a>\n          <a href="#" onclick=', '><i class="fa fa-heart" aria-hiddn="true"></i></a>\n          <span class="left likes">', '</span>\n        </p>\n      </div>\n    </div>']);
+var _templateObject = _taggedTemplateLiteral(['<div class="card ', '">\n      <div class="card-image waves-effect waves-block waves-light">\n        <img class="activator" src="', '" ondblclick=', '/>\n        <i class="fa fa-heart like-heart ', '"></i>\n      </div>\n      <div class="card-content">\n        <a href="/', '" class="card-title">\n          <img src="', '" class="avatar"/>\n          <span class="card-title">', '</span>\n        </a>\n        <small class="right time">', '</small>\n        <p>\n          <a href="#" onclick=', '><i class="fa fa-heart-o" aria-hiddn="true"></i></a>\n          <a href="#" onclick=', '><i class="fa fa-heart" aria-hiddn="true"></i></a>\n          <span class="left likes">', '</span>\n        </p>\n      </div>\n    </div>'], ['<div class="card ', '">\n      <div class="card-image waves-effect waves-block waves-light">\n        <img class="activator" src="', '" ondblclick=', '/>\n        <i class="fa fa-heart like-heart ', '"></i>\n      </div>\n      <div class="card-content">\n        <a href="/', '" class="card-title">\n          <img src="', '" class="avatar"/>\n          <span class="card-title">', '</span>\n        </a>\n        <small class="right time">', '</small>\n        <p>\n          <a href="#" onclick=', '><i class="fa fa-heart-o" aria-hiddn="true"></i></a>\n          <a href="#" onclick=', '><i class="fa fa-heart" aria-hiddn="true"></i></a>\n          <span class="left likes">', '</span>\n        </p>\n      </div>\n    </div>']);
 
 function _taggedTemplateLiteral(strings, raw) {
   return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
@@ -18479,14 +18479,29 @@ var translate = require('../translate');
 module.exports = function pictureCard(pic) {
   var el;
   function render(picture) {
-    return yo(_templateObject, picture.liked ? 'liked' : '', picture.url, picture.user.username, picture.user.avatar, picture.user.username, translate.date.format(picture.createdAt), like.bind(null, true), like.bind(null, false), translate.message('likes', { likes: picture.likes }));
+    return yo(_templateObject, picture.liked ? 'liked' : '', picture.url, like.bind(null, null, true), picture.likedHeart ? 'liked' : '', picture.user.username, picture.user.avatar, picture.user.username, translate.date.format(picture.createdAt), like.bind(null, true), like.bind(null, false), translate.message('likes', { likes: picture.likes }));
   }
 
-  function like(liked) {
-    pic.liked = liked;
+  function like(liked, dblclick) {
+    if (dblclick) {
+      pic.likedHeart = pic.liked = !pic.liked;
+      liked = pic.liked;
+    } else {
+      pic.liked = liked;
+    }
     pic.likes += liked ? 1 : -1;
-    var newEl = render(pic);
-    yo.update(el, newEl);
+
+    function doRender() {
+      var newEl = render(pic);
+      yo.update(el, newEl);
+    }
+
+    doRender();
+
+    setTimeout(function () {
+      pic.likedHeart = false;
+      doRender();
+    }, 1500);
     return false;
   }
 
