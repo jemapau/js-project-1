@@ -78,7 +78,7 @@ app.get('/api/user/:username', (req, res) => {
     pictures: [
       {
         id: 1,
-        src: 'https://d13yacurqjgara.cloudfront.net/users/440670/screenshots/3390433/magic_forest_1.jpg',
+        src: 'https://d13yacurqjgara.cloudfront.net/users/35381/screenshots/3342134/ramne.png',
         likes: 3,
       },
       {
