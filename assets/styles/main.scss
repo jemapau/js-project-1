@@ -1,0 +1,16 @@
+
+$secondary-color: #125688;
+$red-color: #f44336;
+
+$screen-sm-min: 468px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+
+$avatar-size: 48px;
+
+@import 'setting';
+@import 'form';
+@import 'cards';
+@import 'user';
+@import 'modal';

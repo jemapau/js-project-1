@@ -13,7 +13,7 @@ module.exports = function(user) {
           </div>
           <div class="col s12 m10 offset-m1 l6 left-align">
             <h2 class="hide-on-large-only center-align">${user.username}</h2>
-            <h2 class="hide-on-med and-down left-align">${user.username}</h2>
+            <h2 class="hide-on-med-and-down left-align">${user.username}</h2>
           </div>
         </div>
       </div>

@@ -136,8 +136,7 @@ nav .brand-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
-    margin-bottom: 20px;
+    max-height: 400px !important;
     position: relative; }
     .container.user-page .picture-container:hover .picture {
       opacity: 0.8;
@@ -172,6 +171,39 @@ nav .brand-logo {
 
 .modal .fa-heart {
   display: inline-block; }
+
+@media screen and (max-width: 468px) {
+  .modal.modal-content {
+    padding: 24px 0px 185px 0px;
+    height: 405px !important; } }
+
+@media screen and (max-width: 468px) {
+  .modal .modal-footer {
+    display: flex;
+    align-items: center;
+    height: 85px !important;
+    font-size: smaller; } }
+
+@media screen and (max-width: 468px) {
+  .modal.modal-fixed-footer {
+    height: 325px !important; } }
+
+@media screen and (max-width: 468px) {
+  .modal .modal-close {
+    position: absolute;
+    right: 15px;
+    top: 15px; } }
+
+@media screen and (max-width: 468px) {
+  .modal .modal-close > span {
+    display: none; } }
+
+@media screen and (max-width: 468px) {
+  img.responsive-img.circle {
+    max-width: 60px !important;
+    max-height: 60px !important;
+    border: 3px solid #26a69a;
+    margin: 10px; } }
 
 .like-heart {
   font-size: 10em;

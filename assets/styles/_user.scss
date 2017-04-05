@@ -1,0 +1,53 @@
+.container.user-page {
+  margin-top: 30px !important;
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.picture-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 400px !important;
+  position: relative;
+
+   &:hover {
+    .picture {
+      opacity: 0.8;
+      background: black;
+    }
+
+     .likes {
+       display: flex;
+     }
+   }
+
+  .picture {
+    margin-bottom: 20px;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .likes {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: $red-color;
+    font-size: 34px;
+    display: none
+  }
+
+  .fa-heart {
+    margin-right: 8px;
+    display: inline-block;
+  }
+}
+}
