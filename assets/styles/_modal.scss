@@ -1,0 +1,72 @@
+.modal {
+  img {
+    max-height: 100%;
+    max-width: 90%;
+  }
+  .fa-heart {
+    display: inline-block;
+  }
+}
+
+
+.modal.modal-content {
+  @media screen and (max-width: $screen-sm-min) {
+     padding: 24px 0px 185px 0px;
+     height: 405px !important;
+  }
+}
+.modal .modal-footer {
+  @media screen and (max-width: $screen-sm-min) {
+    display: flex;
+    align-items: center;
+    height: 85px !important;
+    font-size: smaller;
+  }
+}
+.modal.modal-fixed-footer {
+  @media screen and (max-width: $screen-sm-min) {
+    height: 325px !important;
+  }
+}
+
+.modal .modal-close {
+  @media screen and (max-width: $screen-sm-min) {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+
+.modal .modal-close > span {
+  @media screen and (max-width: $screen-sm-min) {
+    display: none;
+  }
+}
+
+img.responsive-img.circle {
+  @media screen and (max-width: $screen-sm-min) {
+    max-width: 60px !important;
+    max-height: 60px !important;
+    border: 3px solid #26a69a;
+    margin: 10px;
+  }
+}
+
+.like-heart {
+  font-size: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: all .1s ease;
+  opacity: 0;
+}
+
+.like-heart.liked {
+  color: $red-color;
+  font-size: 12em;
+  display: block;
+  transition: all .5s ease;
+  opacity: 1;
+}

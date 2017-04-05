@@ -8,7 +8,7 @@ var watchify = require('watchify')
 
 gulp.task('styles', function (){
   gulp
-    .src('index.scss')
+    .src('assets/styles/main.scss')
     .pipe(sass())
     .pipe(rename('app.css'))
     .pipe(gulp.dest('public'));
